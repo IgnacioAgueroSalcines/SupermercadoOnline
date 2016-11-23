@@ -1,0 +1,8 @@
+package es.unican.ps.supermercadoOnline.utils;
+
+@Remote
+public interface IRegistroUsuario {
+	
+	public Usuario addUsuario (Usuario usuario);
+
+}

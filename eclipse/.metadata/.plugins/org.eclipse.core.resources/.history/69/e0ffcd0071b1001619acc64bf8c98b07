@@ -1,0 +1,7 @@
+package es.unican.ps.supermercadoOnline.negocio;
+
+import es.unican.ps.supermercadoOnline.utils.*;
+
+public class GestionPedidoEJB implements IRealizaPedido,IPreparacionPedido{
+
+}

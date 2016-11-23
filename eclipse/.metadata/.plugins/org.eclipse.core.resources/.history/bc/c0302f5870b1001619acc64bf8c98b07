@@ -1,0 +1,12 @@
+package es.unican.ps.supermercadoOnline.utils;
+
+import javax.ejb.Remote;
+
+@Remote
+public interface IRealizaPedido {
+	
+	public int confirmPedido (Pedido pedido);
+	public int checkUnidadesStock (Articulo articulo);
+	public LineaPedido addLineaPedido (LineaPedido linea);
+
+}

@@ -1,0 +1,6 @@
+package es.unican.ps.supermercadoOnline.utils;
+
+public interface IListarArticulos {
+	
+	public List<Articulo> listArticulos();
+	}

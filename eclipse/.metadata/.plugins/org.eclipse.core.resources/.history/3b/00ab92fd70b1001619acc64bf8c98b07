@@ -1,0 +1,5 @@
+package es.unican.ps.supermercadoOnline.negocio;
+
+public class GestionPedidoEJB {
+
+}

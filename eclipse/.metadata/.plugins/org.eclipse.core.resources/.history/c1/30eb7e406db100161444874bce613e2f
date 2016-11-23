@@ -1,0 +1,21 @@
+package es.unican.ps.supermercadoOnline.utils;
+
+import java.util.Date;
+
+public class Pedido {
+	
+	private String id; //comentario temporal. en MDraw está como int
+	private EstadoPedido estado;
+	private Date fecha;
+	private Date horaRecogida ;
+	
+	
+	public Pedido(String id, Date fecha, Date horaRecogida) {
+		super();
+		this.id = id;
+		//this.estado = estado;
+		this.fecha = fecha;
+		this.horaRecogida = horaRecogida;
+	}
+
+}

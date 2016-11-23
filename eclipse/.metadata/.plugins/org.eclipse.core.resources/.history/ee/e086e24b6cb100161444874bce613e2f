@@ -1,0 +1,9 @@
+package es.unican.ps.supermercadoOnline.utils;
+
+public interface IRealizaPedido {
+	
+	public int confirmPedido (Pedido pedido);
+	public int checkUnidadesStock (Articulo articulo);
+	public LineaPedido addLineaPedido (LineaPedido linea);
+
+}
