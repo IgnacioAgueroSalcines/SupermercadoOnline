@@ -14,6 +14,7 @@ public class Pedido {
 	private Usuario usuario;
 	private List<LineaPedido> lineasPedido;
 
+	public Pedido(){}
 
 	public Pedido(long id, Date fecha, Date horaRecogida,
 			Usuario usuario, List<LineaPedido> lineasPedido) {

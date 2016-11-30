@@ -1,8 +1,0 @@
-package es.unican.ps.supermercadoOnline.utils;
-
-public interface IPreparacionPedido {
-	
-	public Pedido processPedido();
-	public double givePedido(Pedido pedido);
-
-}

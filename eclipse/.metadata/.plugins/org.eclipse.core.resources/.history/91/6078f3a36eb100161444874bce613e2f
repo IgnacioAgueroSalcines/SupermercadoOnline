@@ -1,9 +1,0 @@
-package es.unican.ps.supermercadoOnline.utils;
-
-public class Tienda {
-	
-	private List<Usuario> usuariosRegistrados;
-	private List<Pedido> pedidos;
-	private List <Articulo> articulosDisponibles;
-
-}
