@@ -5,7 +5,7 @@ import es.unican.ps.supermercadoOnline.domain.LineaPedido;
 import es.unican.ps.supermercadoOnline.domain.Pedido;
 import es.unican.ps.supermercadoOnline.utils.*;
 
-public class GestionPedidoEJB implements IRealizaPedido,IPreparacionPedido{
+public class GestionPedidoEJB implements IRealizaPedidoRemote,IPreparacionPedidoRemote{
 
 	public Pedido processPedido() {
 		// TODO Auto-generated method stub

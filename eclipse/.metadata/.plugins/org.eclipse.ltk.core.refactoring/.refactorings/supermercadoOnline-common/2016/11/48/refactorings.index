@@ -1,0 +1,6 @@
+1480503120279	Rename type 'IExisteUsuario'
+1480503136294	Rename type 'IGestionArticulo'
+1480503146631	Rename type 'IListarArticulos'
+1480503166285	Rename type 'IPreparacionPedido'
+1480503180625	Rename type 'IRealizaPedido'
+1480503190088	Rename type 'IRegistroUsuario'

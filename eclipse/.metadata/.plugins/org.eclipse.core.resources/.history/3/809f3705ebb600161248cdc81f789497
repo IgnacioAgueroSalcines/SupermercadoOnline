@@ -1,0 +1,10 @@
+package es.unican.ps.supermercadoOnline.utils;
+
+import javax.ejb.Remote;
+
+
+
+@Remote
+public interface IExisteUsuario {
+	public boolean exitsUsuario(String dni);
+}

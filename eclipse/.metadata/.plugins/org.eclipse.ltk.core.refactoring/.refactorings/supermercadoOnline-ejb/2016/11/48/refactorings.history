@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;es.unican.ps.supermercadoOnline.negocio.GestionUsuario&apos; to &apos;GestionUsuarioEJB&apos;&#x0D;&#x0A;- Original project: &apos;supermercadoOnline-ejb&apos;&#x0D;&#x0A;- Original element: &apos;es.unican.ps.supermercadoOnline.negocio.GestionUsuario&apos;&#x0D;&#x0A;- Renamed element: &apos;es.unican.ps.supermercadoOnline.negocio.GestionUsuarioEJB&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;GestionUsuario&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;es.unican.ps.supermercadoOnline.negocio{GestionUsuario.java[GestionUsuario" matchStrategy="1" name="GestionUsuarioEJB" qualified="false" references="true" similarDeclarations="false" stamp="1480502462053" textual="false" version="1.0"/>
+</session>
