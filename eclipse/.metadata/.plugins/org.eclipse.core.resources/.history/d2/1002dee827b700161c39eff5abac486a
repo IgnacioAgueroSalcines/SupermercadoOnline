@@ -19,12 +19,12 @@ public class GestionUsuarioEJB implements IListarArticulosRemote,IGestionArticul
 		return null;
 	}
 
-	public List<Articulo> listArticulos() {
+	public Articulo uptadeArticulo(Articulo articulo) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public Articulo updateArticulo(Articulo articulo) {
+	public List<Articulo> listArticulos() {
 		// TODO Auto-generated method stub
 		return null;
 	}

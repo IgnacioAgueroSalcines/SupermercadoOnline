@@ -22,7 +22,7 @@ public class GestionArticuloEJB implements IGestionArticuloRemote{
 		return res;
 	}
 
-	public Articulo updateArticulo(Articulo articulo) {
+	public Articulo uptadeArticulo(Articulo articulo) {
 		Articulo res=gestionArticulo.updateArticulo(articulo);
 		return res;
 	}
