@@ -8,6 +8,7 @@ import es.unican.ps.supermercadoOnline.domain.Pedido;
 public interface IPreparacionPedidoRemote {
 	
 	public Pedido processPedido();
-	public double givePedido(Pedido pedido);
+	public void givePedido(Pedido pedido);
+	public Pedido getPedido(long id);
 
 }

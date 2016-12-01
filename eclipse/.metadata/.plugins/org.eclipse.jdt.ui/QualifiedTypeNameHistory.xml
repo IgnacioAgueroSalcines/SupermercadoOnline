@@ -9,8 +9,13 @@
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Articulo"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IArticuloDAO"/>
-<fullyQualifiedTypeName name="javax.ejb.Stateless"/>
 <fullyQualifiedTypeName name="javax.ejb.EJB"/>
 <fullyQualifiedTypeName name="javax.ejb.Stateful"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Usuario"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.text.DateFormat"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.util.Queue"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.EstadoPedido"/>
+<fullyQualifiedTypeName name="javax.ejb.Stateless"/>
 </qualifiedTypeNameHistroy>
