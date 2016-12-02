@@ -16,6 +16,9 @@
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.EstadoPedido"/>
 <fullyQualifiedTypeName name="javax.ejb.Stateless"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Queue"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IRegistroUsuarioRemote"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IExisteUsuarioRemote"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IUsuarioDAO"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

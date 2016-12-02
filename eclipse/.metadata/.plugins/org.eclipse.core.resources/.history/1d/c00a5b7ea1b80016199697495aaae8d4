@@ -28,7 +28,8 @@ public class GestionUsuarioEJB implements IRegistroUsuarioRemote,IExisteUsuarioR
 	}
 
 	public Usuario addUsuario(Usuario usuario) {
-		return gestionUsuario.addUsuario(usuario);
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	

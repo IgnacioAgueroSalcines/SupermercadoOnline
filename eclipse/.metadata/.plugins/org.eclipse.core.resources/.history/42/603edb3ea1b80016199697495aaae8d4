@@ -1,34 +1,25 @@
 package es.unican.ps.supermercadoOnline.negocio;
 
-
 import java.util.List;
 
-import javax.ejb.EJB;
-
+import es.unican.ps.supermercadoOnline.domain.Articulo;
 import es.unican.ps.supermercadoOnline.domain.Usuario;
 import es.unican.ps.supermercadoOnline.utils.IExisteUsuarioRemote;
+import es.unican.ps.supermercadoOnline.utils.IGestionArticuloRemote;
+import es.unican.ps.supermercadoOnline.utils.IListarArticulosRemote;
 import es.unican.ps.supermercadoOnline.utils.IRegistroUsuarioRemote;
-import es.unican.ps.supermercadoOnline.utils.IUsuarioDAO;
 
 public class GestionUsuarioEJB implements IRegistroUsuarioRemote,IExisteUsuarioRemote
 {
 
-	@EJB
-	private IUsuarioDAO gestionUsuario;
-	
 	public boolean exitsUsuario(String dni) {
-		List<Usuario> lista=gestionUsuario.listaUsuarios();
-		Boolean res=false;
-		for(Usuario u: lista){
-			if(u.getDni().equals(dni)){
-				res=true;
-			}
-		}
-		return res;
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 	public Usuario addUsuario(Usuario usuario) {
-		return gestionUsuario.addUsuario(usuario);
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	
