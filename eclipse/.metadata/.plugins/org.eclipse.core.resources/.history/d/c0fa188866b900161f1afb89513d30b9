@@ -1,0 +1,49 @@
+package testEJB;
+
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
+
+import java.util.Date;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import es.unican.ps.supermercadoOnline.domain.Usuario;
+import es.unican.ps.supermercadoOnline.negocio.GestionPedidoRealizadoEJB;
+import es.unican.ps.supermercadoOnline.utils.IPedidoDAO;
+
+public class GestionPedidoRealizadoEJBTest {
+
+	private static  IPedidoDAO mock = mock(IPedidoDAO.class);
+	private static GestionPedidoRealizadoEJB gestionTest;
+	private static Usuario usuario;
+	
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+		when(mock.addPedido(gestionTest.getPedidoActual())).thenReturn(gestionTest.getPedidoActual());
+	}
+	
+	@Before
+	public void setUpBefore() throws Exception {
+		gestionTest= new GestionPedidoRealizadoEJB();
+		gestionTest.setGestionPedido(mock);
+		usuario=new Usuario();
+		gestionTest.init(usuario);
+		
+	}
+
+
+	@Test
+	public void confirmPedidoTest() {
+		Date horaRecogida=new Date();
+		int res=gestionTest.confirmPedido(horaRecogida);
+		assertTrue(res==0);
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+	
+}

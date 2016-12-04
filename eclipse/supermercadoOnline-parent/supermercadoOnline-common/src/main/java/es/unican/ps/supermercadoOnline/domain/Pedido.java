@@ -1,4 +1,5 @@
 package es.unican.ps.supermercadoOnline.domain;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -7,29 +8,19 @@ public class Pedido {
 
 
 
-	private long id; //comentario temporal. en MDraw está como int
+	private long id; 
 	private EstadoPedido estado;
 	private Date fecha;
 	private Date horaRecogida ;
 	private Usuario usuario;
 	private List<LineaPedido> lineasPedido;
 
-	public Pedido(){}
-
-	public Pedido(long id, Date fecha, Date horaRecogida,
-			Usuario usuario, List<LineaPedido> lineasPedido) {
-		super();
-		this.id = id;
+	public Pedido(){
 		this.estado =EstadoPedido.PENDIENTE;
-		this.fecha = fecha;
-		this.horaRecogida = horaRecogida;
-		this.usuario = usuario;
-		this.lineasPedido = lineasPedido;
+		this.lineasPedido = new ArrayList<LineaPedido>();
 	}
 
-
-
-
+	
 
 	public long getId() {
 		return id;

@@ -1,21 +1,20 @@
 package es.unican.ps.supermercadoOnline.domain;
 public class LineaPedido {
 	
+	private static long idCont=0;
 	private long id;
 	private int cantidad;
 	private Articulo articulo;
-	public LineaPedido(long id, int cantidad, Articulo articulo) {
+	public LineaPedido(int cantidad, Articulo articulo) {
 		super();
-		this.id = id;
+		id=idCont++;
 		this.cantidad = cantidad;
 		this.articulo = articulo;
 	}
 	public long getId() {
 		return id;
 	}
-	public void setId(long id) {
-		this.id = id;
-	}
+	
 	public int getCantidad() {
 		return cantidad;
 	}

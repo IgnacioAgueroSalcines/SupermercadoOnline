@@ -1,6 +1,7 @@
 package es.unican.ps.supermercadoOnline.negocio;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateful;
@@ -16,7 +17,31 @@ public class GestionPedidoRealizadoEJB implements IRealizaPedidoRemote{
 	private IPedidoDAO gestionPedido;
 	
 	
+	public IPedidoDAO getGestionPedido() {
+		return gestionPedido;
+	}
+
+	public void setGestionPedido(IPedidoDAO gestionPedido) {
+		this.gestionPedido = gestionPedido;
+	}
+
 	private Pedido pedidoActual;
+
+	public Pedido getPedidoActual() {
+		return pedidoActual;
+	}
+
+	public void setPedidoActual(Pedido pedidoActual) {
+		this.pedidoActual = pedidoActual;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
 
 	private Usuario usuario;
 
@@ -38,8 +63,13 @@ public class GestionPedidoRealizadoEJB implements IRealizaPedidoRemote{
 	}
 
 	public LineaPedido addLineaPedido(LineaPedido linea) {
-		pedidoActual.getLineasPedido().add(linea);
-		return linea;
+		List<LineaPedido> list=pedidoActual.getLineasPedido();
+		list.add(linea);
+		for(LineaPedido l : list){
+			if(l.getId()==linea.getId())
+				return l;
+		}
+		return null;
 	}
 
 

@@ -1,0 +1,30 @@
+package testEJB;
+
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import es.unican.ps.supermercadoOnline.utils.IPedidoDAO;
+
+public class GestionPedidoRealizadoEJBTest {
+
+	private static  IPedidoDAO gestionPedido = mock(IPedidoDAO.class);
+	
+	@BeforeClass
+	public void setUpBeforeClass() throws Exception {
+		
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

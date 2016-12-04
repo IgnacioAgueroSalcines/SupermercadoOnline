@@ -14,6 +14,8 @@ public class Usuario {
 		return nombre;
 	}
 	
+	public Usuario(){}
+	
 	public Usuario(long id, String nombre, String dni, String direccion) {
 		super();
 		this.id = id;

@@ -6,9 +6,10 @@ public class Articulo {
 	private String nombre;
 	private int unidadesStock;
 	private double precio;
-	public Articulo(long id, String nombre, int unidadesStock, double precio) {
+	private static long idCont=0;
+	public Articulo(String nombre, int unidadesStock, double precio) {
 		super();
-		this.id = id;
+		this.id = idCont++;
 		this.nombre = nombre;
 		this.unidadesStock = unidadesStock;
 		this.precio = precio;

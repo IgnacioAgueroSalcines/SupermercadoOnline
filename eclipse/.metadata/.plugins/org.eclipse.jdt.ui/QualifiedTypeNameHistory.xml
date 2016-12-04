@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.Articulo"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.LineaPedido"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Pedido"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IRealizaPedido"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IGestionArticulo"/>
 <fullyQualifiedTypeName name="javax.ejb.Remote"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Articulo"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IArticuloDAO"/>
 <fullyQualifiedTypeName name="javax.ejb.EJB"/>
 <fullyQualifiedTypeName name="javax.ejb.Stateful"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Usuario"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 <fullyQualifiedTypeName name="java.text.DateFormat"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.EstadoPedido"/>
 <fullyQualifiedTypeName name="javax.ejb.Stateless"/>
 <fullyQualifiedTypeName name="java.util.Queue"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IRegistroUsuarioRemote"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IExisteUsuarioRemote"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IUsuarioDAO"/>
+<fullyQualifiedTypeName name="org.junit.BeforeClass"/>
+<fullyQualifiedTypeName name="testEJB.GestionPedidoRealizadoEJBTest"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Usuario"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.negocio.GestionPedidoRealizadoEJB"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Pedido"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.LineaPedido"/>
+<fullyQualifiedTypeName name="com.sun.enterprise.admin.servermgmt.xml.stringsubs.Archive"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Articulo"/>
 </qualifiedTypeNameHistroy>
