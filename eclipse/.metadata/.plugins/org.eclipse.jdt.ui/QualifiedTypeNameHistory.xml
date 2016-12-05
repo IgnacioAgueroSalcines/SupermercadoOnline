@@ -21,9 +21,9 @@
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.negocio.GestionPedidoRealizadoEJB"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Pedido"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.LineaPedido"/>
 <fullyQualifiedTypeName name="com.sun.enterprise.admin.servermgmt.xml.stringsubs.Archive"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Articulo"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

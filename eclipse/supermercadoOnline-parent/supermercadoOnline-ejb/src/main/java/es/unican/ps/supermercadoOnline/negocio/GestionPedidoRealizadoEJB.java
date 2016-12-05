@@ -16,37 +16,9 @@ public class GestionPedidoRealizadoEJB implements IRealizaPedidoRemote{
 	@EJB
 	private IPedidoDAO gestionPedido;
 	
-	
-	public IPedidoDAO getGestionPedido() {
-		return gestionPedido;
-	}
-
-	public void setGestionPedido(IPedidoDAO gestionPedido) {
-		this.gestionPedido = gestionPedido;
-	}
-
-	private Pedido pedidoActual;
-
-	public Pedido getPedidoActual() {
-		return pedidoActual;
-	}
-
-	public void setPedidoActual(Pedido pedidoActual) {
-		this.pedidoActual = pedidoActual;
-	}
-
-	public Usuario getUsuario() {
-		return usuario;
-	}
-
-	public void setUsuario(Usuario usuario) {
-		this.usuario = usuario;
-	}
+	private Pedido pedidoActual;	
 
 	private Usuario usuario;
-
-	
-
 
 	public void init(Usuario usuario) {
 		this.usuario=usuario;
@@ -73,6 +45,32 @@ public class GestionPedidoRealizadoEJB implements IRealizaPedidoRemote{
 	}
 
 
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+	
+	public IPedidoDAO getGestionPedido() {
+		return gestionPedido;
+	}
+
+	public void setGestionPedido(IPedidoDAO gestionPedido) {
+		this.gestionPedido = gestionPedido;
+	}
+
+	
+
+	public Pedido getPedidoActual() {
+		return pedidoActual;
+	}
+
+	public void setPedidoActual(Pedido pedidoActual) {
+		this.pedidoActual = pedidoActual;
+	}
 
 
 
