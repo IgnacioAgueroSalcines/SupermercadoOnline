@@ -1,7 +1,0 @@
-package es.unican.ps.supermercadoOnline.negocio;
-
-import es.unican.ps.supermercadoOnline.utils.IGestionArticulo;
-
-public class GestionArticuloEJB implements IGestionArticulo{
-
-}

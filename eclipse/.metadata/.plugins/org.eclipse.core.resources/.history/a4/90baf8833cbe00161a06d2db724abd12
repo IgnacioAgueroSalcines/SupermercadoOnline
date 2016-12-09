@@ -1,0 +1,6 @@
+package es.unican.ps.supermercadoOnline.dao;
+
+public class PedidoDAO implements IPedidoDAO{
+
+	
+}
