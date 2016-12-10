@@ -1,8 +1,16 @@
 package es.unican.ps.supermercadoOnline.domain;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+
+@Entity
 public class LineaPedido {
-	
+	@Id
 	private long id;
 	private int cantidad;
+	@OneToOne
+	@JoinColumn(name="articulo_fk")
 	private Articulo articulo;
 	public LineaPedido(int cantidad, Articulo articulo) {
 		super();

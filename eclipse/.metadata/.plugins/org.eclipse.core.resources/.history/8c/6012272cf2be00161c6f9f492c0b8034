@@ -1,0 +1,16 @@
+package es.unican.ps.supermercadoOnline.dao;
+
+import es.unican.ps.supermercadoOnline.domain.Pedido;
+
+
+public class PedidoDAO extends GenericDAO<Pedido>{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	
+
+	
+}

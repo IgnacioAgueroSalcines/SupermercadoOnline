@@ -1,6 +1,10 @@
 package es.unican.ps.supermercadoOnline.domain;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Usuario {
-	
+	@Id
 	private long id;
 	
 

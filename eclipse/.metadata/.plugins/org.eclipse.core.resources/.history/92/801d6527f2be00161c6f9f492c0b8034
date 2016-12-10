@@ -1,0 +1,12 @@
+package es.unican.ps.supermercadoOnline.utils;
+
+import java.util.List;
+
+public interface IGenericDAO<T> {
+
+	public T addElement(T element) ;
+	public T removeElement(T element);
+	public T updateElement(T element);
+	public List<T> listaElement();
+	public T getElement(long id);
+}

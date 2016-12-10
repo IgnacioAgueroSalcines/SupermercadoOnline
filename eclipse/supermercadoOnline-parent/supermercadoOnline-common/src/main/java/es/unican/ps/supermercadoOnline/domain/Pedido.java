@@ -3,16 +3,27 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+
+@Entity
 public class Pedido {
-
-
-
-
+	@Id
 	private long id; 
 	private EstadoPedido estado;
 	private Date fecha;
 	private Date horaRecogida ;
+	@OneToOne
+	@JoinColumn(name="usuario_fk")
 	private Usuario usuario;
+	@OneToMany
+	 @JoinTable(name="PropiedadVehiculos",
+	 joinColumns=@JoinColumn(name="usr_fk"),
+	 inverseJoinColumns=@JoinColumn(name="lp_fk"))
 	private List<LineaPedido> lineasPedido;
 
 	public Pedido(){

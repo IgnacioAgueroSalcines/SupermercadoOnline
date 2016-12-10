@@ -1,35 +1,15 @@
 package es.unican.ps.supermercadoOnline.dao;
 
-import java.util.List;
-
 import es.unican.ps.supermercadoOnline.domain.Articulo;
-import es.unican.ps.supermercadoOnline.utils.IArticuloDAO;
+import es.unican.ps.supermercadoOnline.utils.GenericDAO;
 
-public class ArticuloDAO implements IArticuloDAO{
+public class ArticuloDAO extends GenericDAO<Articulo>{
 
-	public Articulo addArticulo(Articulo articulo) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
-	public Articulo removeArticulo(Articulo articulo) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public Articulo updateArticulo(Articulo articulo) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public List<Articulo> listaArticulos() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public Articulo getArticulo(long id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 
 }

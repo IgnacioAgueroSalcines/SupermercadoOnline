@@ -1,0 +1,52 @@
+package es.unican.ps.supermercadoOnline.dao;
+
+import java.io.Serializable;
+import java.lang.reflect.ParameterizedType;
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+import javax.persistence.TypedQuery;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
+
+import es.unican.ps.supermercadoOnline.domain.Articulo;
+
+public class GenericDAO<T> implements Serializable{
+	@PersistenceContext
+	private EntityManager em;
+
+	public T addElement(T element) {
+		em.persist(element);
+		return null;
+	}
+
+	public T removeElement(T element) {
+		em.remove(element);
+		return element;
+	}
+
+	public T updateElement(T element) {
+		return em.merge(element);
+	}
+
+	public List<T> listaElement() {
+		return em.createQuery("Select t from " + GenericDAO.getSimpleName() + " t").getResultList();
+	}
+
+	public T getElement(long id) {
+		T res=null;
+		
+		res= (T) em.find(getEntityClass(), id);
+		
+		return res;
+	}
+	
+	public Class<T> getEntityClass() {
+        ParameterizedType genericSuperclass = (ParameterizedType) getClass().getGenericSuperclass();
+
+        return (Class<T>) genericSuperclass.getActualTypeArguments()[0];
+    }
+}

@@ -1,0 +1,49 @@
+package es.unican.ps.supermercadoOnline.dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.Query;
+
+import es.unican.ps.supermercadoOnline.domain.Articulo;
+
+public class GenericDAO {
+	private EntityManager em;
+
+	public Articulo addArticulo(Articulo articulo) {
+		em.persist(articulo);
+		return null;
+	}
+
+	public Articulo removeArticulo(Articulo articulo) {
+		Articulo res=null;
+		res=em.find(Articulo.class, articulo.getId());
+		if (res != null) {
+		      em.remove(res);
+		    }
+		return res;
+	}
+
+	public Articulo updateArticulo(Articulo articulo) {
+		Articulo res=null;
+		if(em.contains(articulo)){
+			res= em.find(Articulo.class, articulo.getId());
+			em.persist(res);
+			res=articulo;
+		}
+		return res;
+	}
+
+	public List<Articulo> listaArticulos() {
+		Query query = em.createQuery("SELECT a FROM Articulo a");
+	    return (List<Articulo>) query.getResultList();
+	}
+
+	public Articulo getArticulo(long id) {
+		Articulo res=null;
+		
+		res= em.find(Articulo.class, id);
+		
+		return res;
+	}
+}
