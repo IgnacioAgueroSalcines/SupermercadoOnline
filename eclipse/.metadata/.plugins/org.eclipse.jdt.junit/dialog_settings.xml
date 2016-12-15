@@ -5,6 +5,6 @@
 		<item value="true" key="NewTestCaseCreationWizardPage.USE_SETUP"/>
 		<item value="true" key="NewTestCaseCreationWizardPage.USE_TEARDOWN"/>
 		<item value="false" key="NewTestCaseCreationWizardPage.USE_CONSTRUCTOR"/>
-		<item value="false" key="NewTestCaseCreationWizardPage.USE_SETUPCLASS"/>
+		<item value="true" key="NewTestCaseCreationWizardPage.USE_SETUPCLASS"/>
 	</section>
 </section>

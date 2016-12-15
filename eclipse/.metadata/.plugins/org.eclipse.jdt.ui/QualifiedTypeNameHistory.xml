@@ -8,18 +8,15 @@
 <fullyQualifiedTypeName name="javax.ejb.Stateful"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 <fullyQualifiedTypeName name="java.text.DateFormat"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.EstadoPedido"/>
 <fullyQualifiedTypeName name="java.util.Queue"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IRegistroUsuarioRemote"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IExisteUsuarioRemote"/>
 <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
 <fullyQualifiedTypeName name="testEJB.GestionPedidoRealizadoEJBTest"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Usuario"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.negocio.GestionPedidoRealizadoEJB"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.LineaPedido"/>
 <fullyQualifiedTypeName name="com.sun.enterprise.admin.servermgmt.xml.stringsubs.Archive"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IPedidoDAO"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IArticuloDAO"/>
@@ -30,7 +27,6 @@
 <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
 <fullyQualifiedTypeName name="javax.persistence.JoinTable"/>
 <fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
-<fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
 <fullyQualifiedTypeName name="javax.persistence.Query"/>
 <fullyQualifiedTypeName name="java.lang.reflect.ParameterizedType"/>
 <fullyQualifiedTypeName name="javax.persistence.PersistenceContext"/>
@@ -39,9 +35,14 @@
 <fullyQualifiedTypeName name="javax.persistence.criteria.Root"/>
 <fullyQualifiedTypeName name="javax.persistence.TypedQuery"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Pedido"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IGenericDAO"/>
 <fullyQualifiedTypeName name="javax.ejb.Stateless"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.GenericDAO"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Articulo"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Usuario"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Pedido"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+<fullyQualifiedTypeName name="org.apache.jasper.tagplugins.jstl.When"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.EstadoPedido"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

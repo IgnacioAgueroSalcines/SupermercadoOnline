@@ -16,7 +16,7 @@ public abstract class GenericDAO<T> implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	@PersistenceContext
+	@PersistenceContext(unitName="SupermercadoOnlinePU")
 	private EntityManager em;
 	private Class<T> persistentClass;
 	
@@ -24,24 +24,30 @@ public abstract class GenericDAO<T> implements Serializable{
     public GenericDAO() {
             this.persistentClass = (Class<T>) ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0];
     }
+	
+	public void setEM(EntityManager em){
+		this.em=em;
+	}
 
 	public T addElement(T element) {
 		em.persist(element);
-		return null;
+		return element;
 	}
 
 	public T removeElement(T element) {
-		em.remove(element);
+		em.remove(em.merge(element));
 		return element;
 	}
 
 	public T updateElement(T element) {
-		return em.merge(element);
+		em.merge(element);
+		return element;
 	}
 
 	@SuppressWarnings("unchecked")
 	public List<T> listaElement() {
-		return em.createQuery("Select t from " + persistentClass.getSimpleName() + " t").getResultList();
+		List<T> res= em.createQuery("Select t from " + persistentClass.getSimpleName() + " t").getResultList();
+		return res;
 	}
 
 	public T getElement(long id) {

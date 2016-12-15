@@ -1,17 +1,26 @@
 package es.unican.ps.supermercadoOnline.domain;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Articulo {
+public class Articulo implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	@Id
+	@GeneratedValue
 	private long id;
 	private String nombre;
 	private int unidadesStock;
 	private double precio;
 	private static long idCont=0;
+	public Articulo(){}
 	public Articulo(String nombre, int unidadesStock, double precio) {
 		super();
 		this.id = idCont++;
