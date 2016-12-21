@@ -1,0 +1,17 @@
+package es.unican.ps.supermercadoOnline.domain;
+
+import java.util.Comparator;
+
+public class ComparatorPedido implements Comparator<Pedido>{
+
+	
+	@Override
+	public int compare(Pedido o1, Pedido o2) {
+		int res=0;
+		if(o1.getFecha().equals(o2.getFecha())){
+			
+		}
+		return res;
+	}
+
+}

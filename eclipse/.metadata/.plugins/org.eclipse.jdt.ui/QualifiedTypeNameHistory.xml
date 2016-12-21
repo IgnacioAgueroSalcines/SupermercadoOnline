@@ -17,8 +17,6 @@
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.LineaPedido"/>
 <fullyQualifiedTypeName name="com.sun.enterprise.admin.servermgmt.xml.stringsubs.Archive"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IPedidoDAO"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IArticuloDAO"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IUsuarioDAO"/>
 <fullyQualifiedTypeName name="javax.persistence.Entity"/>
@@ -27,7 +25,6 @@
 <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
 <fullyQualifiedTypeName name="javax.persistence.JoinTable"/>
 <fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
-<fullyQualifiedTypeName name="javax.persistence.Query"/>
 <fullyQualifiedTypeName name="java.lang.reflect.ParameterizedType"/>
 <fullyQualifiedTypeName name="javax.persistence.PersistenceContext"/>
 <fullyQualifiedTypeName name="javax.persistence.criteria.CriteriaBuilder"/>
@@ -44,5 +41,16 @@
 <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
 <fullyQualifiedTypeName name="org.apache.jasper.tagplugins.jstl.When"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.EstadoPedido"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IPedidoDAO"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="javax.persistence.NamedQuery"/>
+<fullyQualifiedTypeName name="javax.persistence.NamedQueries"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="javax.management.Query"/>
+<fullyQualifiedTypeName name="javax.persistence.Query"/>
+<fullyQualifiedTypeName name="com.sun.xml.ws.policy.privateutil.PolicyUtils.Collections"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.ComparatorPedido"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
 </qualifiedTypeNameHistroy>

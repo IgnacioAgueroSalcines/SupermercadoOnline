@@ -2,11 +2,12 @@ package es.unican.ps.supermercadoOnline.dao;
 
 import static org.mockito.Mockito.*;
 
-import java.util.List;
 
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
 
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import es.unican.ps.supermercadoOnline.domain.EstadoPedido;
@@ -18,6 +19,7 @@ public class PedidoDAOTest {
 	private static PedidoDAO dao;
 	private static Pedido pedido;
 	private static  EntityManager mock = mock(EntityManager.class);
+	private static Query query=mock(Query.class);
 	
 
 	@Before
@@ -26,7 +28,11 @@ public class PedidoDAOTest {
 		dao.setEM(mock);
 	}
 	
-	
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+		when(mock.createQuery("SELECT t FROM Pedido t"))
+		.thenReturn(query);
+	}
 
 	@Test
 	public void testAdd() {
@@ -69,8 +75,7 @@ public class PedidoDAOTest {
 		
 		dao.listaElement();
 		
-		verify(mock).createQuery("Select t from Pedido t");
-	
+		verify(mock).createQuery("SELECT t FROM Pedido t");
 	}
 
 }

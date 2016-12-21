@@ -1,0 +1,62 @@
+package es.unican.ps.supermercadoOnline.dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.Query;
+
+import es.unican.ps.supermercadoOnline.domain.Pedido;
+import es.unican.ps.supermercadoOnline.utils.GenericDAO;
+import es.unican.ps.supermercadoOnline.utils.IPedidoDAO;
+
+
+public class PedidoDAO extends GenericDAO<Pedido> implements IPedidoDAO{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	@SuppressWarnings("unchecked")
+	public List<Pedido> listaElement() {
+		//String query= getEntityClass().getSimpleName();
+		String query="SELECT t FROM Pedido t";
+		Query resQuery=em.createNamedQuery("pedidos");
+		List<Pedido> res= resQuery.getResultList();
+		return res;
+	}
+
+	public Pedido addPedido(Pedido pedido) {
+		return this.addElement(pedido);
+	}
+
+	public Pedido removePedido(Pedido pedido) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Pedido updatePedido(Pedido pedido) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Pedido> listPedidos() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Pedido pedidoPendiente() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Pedido getPedido(long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	
+
+	
+}

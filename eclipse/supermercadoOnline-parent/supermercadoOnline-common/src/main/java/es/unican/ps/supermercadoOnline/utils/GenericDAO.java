@@ -7,6 +7,8 @@ import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+
 
 
 
@@ -17,7 +19,7 @@ public abstract class GenericDAO<T> implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	@PersistenceContext(unitName="SupermercadoOnlinePU")
-	private EntityManager em;
+	protected EntityManager em;
 	private Class<T> persistentClass;
 	
 	@SuppressWarnings("unchecked")
@@ -46,7 +48,10 @@ public abstract class GenericDAO<T> implements Serializable{
 
 	@SuppressWarnings("unchecked")
 	public List<T> listaElement() {
-		List<T> res= em.createQuery("Select t from " + persistentClass.getSimpleName() + " t").getResultList();
+		String query= getEntityClass().getSimpleName();
+		query="SELECT t FROM " + query + " t";
+		Query resQuery=em.createQuery(query);
+		List<T> res= resQuery.getResultList();
 		return res;
 	}
 

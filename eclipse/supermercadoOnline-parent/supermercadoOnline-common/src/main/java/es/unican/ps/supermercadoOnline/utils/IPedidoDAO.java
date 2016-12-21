@@ -13,6 +13,5 @@ public interface IPedidoDAO {
 	public Pedido removePedido(Pedido pedido);
 	public Pedido updatePedido(Pedido pedido);
 	public List<Pedido> listPedidos();
-	public Pedido pedidoPendiente();
 	public Pedido getPedido(long id);
 }
