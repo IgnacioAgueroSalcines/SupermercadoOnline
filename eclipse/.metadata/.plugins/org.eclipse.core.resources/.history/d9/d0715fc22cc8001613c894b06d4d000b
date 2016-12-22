@@ -1,0 +1,40 @@
+package es.unican.ps.supermercadoOnline.dao;
+
+
+import java.util.List;
+
+import es.unican.ps.supermercadoOnline.domain.Usuario;
+import es.unican.ps.supermercadoOnline.utils.GenericDAO;
+import es.unican.ps.supermercadoOnline.utils.IUsuarioDAO;
+
+public class UsuarioDAO extends GenericDAO<Usuario> implements IUsuarioDAO{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public Usuario addUsuario(Usuario usuario) {
+		return this.addElement(usuario);
+	}
+
+	public Usuario removeUsuario(Usuario usuario) {
+		return this.removeElement(usuario);
+	}
+
+	public Usuario updateUsuario(Usuario usuario) {
+		return this.updateElement(usuario);
+	}
+
+	public List<Usuario> listaUsuarios() {
+		return this.listaElement();
+	}
+
+	public Usuario getUsuario(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+}

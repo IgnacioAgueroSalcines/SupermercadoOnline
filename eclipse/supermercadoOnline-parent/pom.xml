@@ -9,6 +9,7 @@
   	<module>supermercadoOnline-ejb</module>
   	<module>supermercadoOnline-common</module>
   	<module>supermercadoOnline-dao</module>
+  	<module>supermercadoOnline-ear</module>
   </modules>
   
   <dependencies>
