@@ -37,11 +37,12 @@ public class GestionPedidoRealizadoEJB implements IRealizaPedidoRemote{
 	public LineaPedido addLineaPedido(LineaPedido linea) {
 		List<LineaPedido> list=pedidoActual.getLineasPedido();
 		list.add(linea);
+		LineaPedido res=null;
 		for(LineaPedido l : list){
 			if(l.getId()==linea.getId())
-				return l;
+				res= l;
 		}
-		return null;
+		return res;
 	}
 
 

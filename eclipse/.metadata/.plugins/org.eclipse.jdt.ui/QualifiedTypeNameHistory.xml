@@ -14,7 +14,6 @@
 <fullyQualifiedTypeName name="testEJB.GestionPedidoRealizadoEJBTest"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.negocio.GestionPedidoRealizadoEJB"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.LineaPedido"/>
 <fullyQualifiedTypeName name="com.sun.enterprise.admin.servermgmt.xml.stringsubs.Archive"/>
 <fullyQualifiedTypeName name="javax.persistence.Entity"/>
 <fullyQualifiedTypeName name="javax.persistence.Id"/>
@@ -32,8 +31,6 @@
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IGenericDAO"/>
 <fullyQualifiedTypeName name="javax.ejb.Stateless"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.GenericDAO"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Articulo"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Usuario"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Pedido"/>
 <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
 <fullyQualifiedTypeName name="org.apache.jasper.tagplugins.jstl.When"/>
@@ -56,4 +53,8 @@
 <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IRealizaPedidoRemote"/>
 <fullyQualifiedTypeName name="org.junit.AfterClass"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Usuario"/>
+<fullyQualifiedTypeName name="javax.validation.constraints.AssertTrue"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.LineaPedido"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Articulo"/>
 </qualifiedTypeNameHistroy>

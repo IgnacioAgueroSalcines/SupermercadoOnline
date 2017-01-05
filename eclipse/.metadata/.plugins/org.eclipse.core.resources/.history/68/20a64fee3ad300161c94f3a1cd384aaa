@@ -1,18 +1,14 @@
 package es.unican.ps.supermercadoOnline.dao;
 
-import static org.junit.Assert.*;
 import static org.mockito.Mockito.verify;
 
 import javax.ejb.embeddable.EJBContainer;
 import javax.validation.constraints.AssertTrue;
 
 import org.junit.AfterClass;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import es.unican.ps.supermercadoOnline.domain.Articulo;
-import es.unican.ps.supermercadoOnline.domain.LineaPedido;
 import es.unican.ps.supermercadoOnline.domain.Pedido;
 import es.unican.ps.supermercadoOnline.domain.Usuario;
 import es.unican.ps.supermercadoOnline.utils.IRealizaPedidoRemote;
@@ -32,23 +28,11 @@ public class PedidoIntegracionTest {
    
     }
     
-    @Before
-	public void setUp() throws Exception {
-    	Usuario usr = new Usuario();
-		remote.init(usr);
-	}
-    
     @Test
-	public void testAddLineaPedido() {
-		LineaPedido linea= new LineaPedido();
-		Articulo articulo = new Articulo();
-		articulo.setNombre("patatas");
-		articulo.setPrecio(2);
-		articulo.setUnidadesStock(4);
-		linea.setCantidad(2);
-		LineaPedido res= remote.addLineaPedido(linea);
-		assertTrue(res.getArticulo()==linea.getArticulo());
-		assertTrue(res.getCantidad()==linea.getCantidad());
+	public void testInit() {
+		Usuario usr = new Usuario();
+		remote.init(usr);
+		assertTrue(usr==remote.getUsuario());
 	
 	}
     
