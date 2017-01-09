@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.Articulo"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IRealizaPedido"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IGestionArticulo"/>
 <fullyQualifiedTypeName name="javax.ejb.Remote"/>
@@ -29,13 +28,11 @@
 <fullyQualifiedTypeName name="javax.persistence.TypedQuery"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IGenericDAO"/>
-<fullyQualifiedTypeName name="javax.ejb.Stateless"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.GenericDAO"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Pedido"/>
 <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
 <fullyQualifiedTypeName name="org.apache.jasper.tagplugins.jstl.When"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.EstadoPedido"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IPedidoDAO"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="javax.persistence.NamedQuery"/>
 <fullyQualifiedTypeName name="javax.persistence.NamedQueries"/>
@@ -57,4 +54,10 @@
 <fullyQualifiedTypeName name="javax.validation.constraints.AssertTrue"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.LineaPedido"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Articulo"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="javax.ejb.Stateless"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IPedidoDAO"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
 </qualifiedTypeNameHistroy>

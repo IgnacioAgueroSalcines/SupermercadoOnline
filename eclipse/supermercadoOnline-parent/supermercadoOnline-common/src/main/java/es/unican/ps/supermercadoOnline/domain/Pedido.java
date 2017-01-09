@@ -1,7 +1,7 @@
 package es.unican.ps.supermercadoOnline.domain;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.Date;
+import java.util.LinkedList;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -18,8 +18,9 @@ import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+
+//@NamedQueries({@NamedQuery(name="pedidos", query="SELECT v FROM Pedido v")})
 @Entity
-@NamedQueries({@NamedQuery(name="pedidos", query="SELECT v FROM Pedido v")})
 public class Pedido implements Serializable{
 	/**
 	 * 
@@ -45,7 +46,7 @@ public class Pedido implements Serializable{
 
 	public Pedido(){
 		this.estado =EstadoPedido.PENDIENTE;
-		this.lineasPedido = new ArrayList<LineaPedido>();
+		this.lineasPedido = new LinkedList<LineaPedido>();
 	}
 
 	

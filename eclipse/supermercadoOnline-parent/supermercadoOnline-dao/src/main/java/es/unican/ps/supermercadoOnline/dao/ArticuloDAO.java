@@ -5,7 +5,15 @@ import java.util.List;
 import es.unican.ps.supermercadoOnline.domain.Articulo;
 import es.unican.ps.supermercadoOnline.utils.GenericDAO;
 import es.unican.ps.supermercadoOnline.utils.IArticuloDAO;
+import java.util.List;
 
+import javax.ejb.Stateless;
+
+import es.unican.ps.supermercadoOnline.domain.Pedido;
+import es.unican.ps.supermercadoOnline.utils.GenericDAO;
+import es.unican.ps.supermercadoOnline.utils.IPedidoDAO;
+
+@Stateless
 public class ArticuloDAO extends GenericDAO<Articulo> implements IArticuloDAO{
 
 	/**

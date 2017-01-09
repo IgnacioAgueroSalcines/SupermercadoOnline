@@ -12,7 +12,6 @@ import javax.persistence.Query;
 
 
 
-@Stateless
 public abstract class GenericDAO<T> implements Serializable{
 	/**
 	 * 
@@ -24,7 +23,8 @@ public abstract class GenericDAO<T> implements Serializable{
 	
 	@SuppressWarnings("unchecked")
     public GenericDAO() {
-            this.persistentClass = (Class<T>) ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0];
+		ParameterizedType genericSuperclass = (ParameterizedType) getClass().getGenericSuperclass();
+        this.persistentClass = (Class<T>) genericSuperclass.getActualTypeArguments()[0];
     }
 	
 	public void setEM(EntityManager em){

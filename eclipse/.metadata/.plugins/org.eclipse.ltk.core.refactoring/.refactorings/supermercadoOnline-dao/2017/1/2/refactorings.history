@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;es.unican.ps.supermercadoOnline.dao.PedidoIntegracionTest&apos; to &apos;PedidoIT&apos;&#x0D;&#x0A;- Original project: &apos;supermercadoOnline-dao&apos;&#x0D;&#x0A;- Original element: &apos;es.unican.ps.supermercadoOnline.dao.PedidoIntegracionTest&apos;&#x0D;&#x0A;- Renamed element: &apos;es.unican.ps.supermercadoOnline.dao.PedidoIT&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;PedidoIntegracionTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java&lt;es.unican.ps.supermercadoOnline.dao{PedidoIntegracionTest.java[PedidoIntegracionTest" matchStrategy="1" name="PedidoIT" qualified="false" references="true" similarDeclarations="false" stamp="1483953669104" textual="false" version="1.0"/>
+</session>

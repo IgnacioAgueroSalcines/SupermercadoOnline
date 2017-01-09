@@ -39,6 +39,52 @@
 
 	<build>
 		<plugins>
+		<!-- Módulo que permite desplegar automáticamente en Glassfish-->
+			<plugin>
+				<groupId>org.glassfish.maven.plugin</groupId>
+				<artifactId>maven-glassfish-plugin</artifactId>
+				<version>2.1</version>
+				<configuration>
+					<!-- Mandatory -->
+					<glassfishDirectory>${local.glassfish.home}</glassfishDirectory>
+					<user>admin</user>
+					<passwordFile>${local.glassfish.passfile}</passwordFile>
+					<!-- Mandatory -->
+					<domain>
+						<name>domain1</name>
+						<httpPort>8080</httpPort>
+						<adminPort>4848</adminPort>
+					</domain>
+					<!-- Mandatory -->
+					<components>
+						<component>
+							<name>${project.artifactId}</name>
+							<artifact>target/${project.build.finalName}.ear</artifact>
+						</component>
+					</components>
+					<debug>true</debug>
+					<terse>false</terse>
+					<echo>true</echo>
+				</configuration>
+				
+				<!-- Este apartado une deploy/undeploy a las fases package/clean -->
+				<!-- <executions>
+					<execution>
+						<id>gf-undeploy</id>
+						<goals>
+							<goal>undeploy</goal>
+						</goals>
+						<phase>clean</phase>
+					</execution>
+					<execution>
+						<id>gf-deploy</id>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+						<phase>package</phase>
+					</execution>
+				</executions> -->
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>

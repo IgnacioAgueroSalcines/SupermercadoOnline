@@ -7,7 +7,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="supermercadoOnline-ear"/>
+			<item value="supermercadoOnline-test"/>
 			<item value="supermercadoOnline-parent"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -53,6 +53,7 @@
 	</section>
 	<section name="MavenModuleWizardParentPage">
 		<list key="moduleName">
+			<item value="supermercadoOnline-test"/>
 			<item value="supermercadoOnline-ear"/>
 			<item value="supermercadoOnline-dao"/>
 			<item value="supermercadoOnline-common"/>
@@ -86,13 +87,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="org.supermercadoOnline.ear"/>
+			<item value="org.supermercadoOnline.test"/>
 		</list>
 		<list key="groupId">
 			<item value="es.unican.ps"/>
 		</list>
 		<list key="artifactId">
-			<item value="supermercadoOnline-ear"/>
+			<item value="supermercadoOnline-test"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

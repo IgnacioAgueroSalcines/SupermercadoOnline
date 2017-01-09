@@ -1,11 +1,14 @@
 package es.unican.ps.supermercadoOnline.dao;
 
 import java.util.List;
+
+import javax.ejb.Stateless;
+
 import es.unican.ps.supermercadoOnline.domain.Pedido;
 import es.unican.ps.supermercadoOnline.utils.GenericDAO;
 import es.unican.ps.supermercadoOnline.utils.IPedidoDAO;
 
-
+@Stateless
 public class PedidoDAO extends GenericDAO<Pedido> implements IPedidoDAO{
 
 	/**

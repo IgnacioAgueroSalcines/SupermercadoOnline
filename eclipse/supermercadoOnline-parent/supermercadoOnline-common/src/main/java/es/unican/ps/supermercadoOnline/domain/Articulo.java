@@ -19,11 +19,9 @@ public class Articulo implements Serializable{
 	private String nombre;
 	private int unidadesStock;
 	private double precio;
-	private static long idCont=0;
 	public Articulo(){}
 	public Articulo(String nombre, int unidadesStock, double precio) {
 		super();
-		this.id = idCont++;
 		this.nombre = nombre;
 		this.unidadesStock = unidadesStock;
 		this.precio = precio;

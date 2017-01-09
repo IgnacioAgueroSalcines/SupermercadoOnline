@@ -46,4 +46,31 @@
 		</dependency>
 
 	</dependencies>
+	<build>
+		<plugins>
+		
+			<!--  Plugin necesario para ejecutar pruebas de integración -->
+			<!--  Ejecuta en la fase integration-test las clases 
+			      terminadas en IT (se puede modificar en la conf.) -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<configuration>
+					<!--  Este valor es necesario para que ejecute de 
+						   manera correcta varios test seguidos -->
+					<forkMode>perTest</forkMode>
+				</configuration>
+				<version>2.19.1</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>integration-test</goal>
+							<goal>verify</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>	
+		</plugins>
+	</build>
+	
 </project>

@@ -6,7 +6,15 @@ import java.util.List;
 import es.unican.ps.supermercadoOnline.domain.Usuario;
 import es.unican.ps.supermercadoOnline.utils.GenericDAO;
 import es.unican.ps.supermercadoOnline.utils.IUsuarioDAO;
+import java.util.List;
 
+import javax.ejb.Stateless;
+
+import es.unican.ps.supermercadoOnline.domain.Pedido;
+import es.unican.ps.supermercadoOnline.utils.GenericDAO;
+import es.unican.ps.supermercadoOnline.utils.IPedidoDAO;
+
+@Stateless
 public class UsuarioDAO extends GenericDAO<Usuario> implements IUsuarioDAO{
 
 	/**
