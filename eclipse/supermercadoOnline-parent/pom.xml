@@ -10,6 +10,7 @@
   	<module>supermercadoOnline-common</module>
   	<module>supermercadoOnline-dao</module>
   	<module>supermercadoOnline-ear</module>
+  	<module>supermercadoOnline-web</module>
   </modules>
   
   <dependencies>

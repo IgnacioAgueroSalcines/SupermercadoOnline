@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Calculator</title>
+</h:head>
+<h:body>
+	<h1>Artículos</h1>
+	<h:form>
+		<h:dataTable
+			value="#{supermercadoOnlineIniciaCompraBean.listaArticulos}"
+			var="articulo">
+
+			<h:column>
+				<!-- column header -->
+				<f:facet name="header">Nombre</f:facet>
+				<!-- row record -->
+    				#{articulo.nombre}
+    			</h:column>
+
+			<h:column>
+				<f:facet name="header">Precio</f:facet>
+    				#{articulo.precio}
+    			</h:column>
+
+			<h:column>
+				<f:facet name="header"></f:facet>
+				<h:outputLabel value="Añadir al carro"
+					onclick="#{supermercadoOnlineIniciaCompraBean.add}" />
+			</h:column>
+		</h:dataTable>
+
+		<h:outputLabel value="Ver carro"
+			onclick="#{supermercadoOnlineIniciaCompraBean.list}" />
+
+	</h:form>
+</h:body>
+</html>

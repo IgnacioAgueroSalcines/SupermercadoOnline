@@ -1,0 +1,47 @@
+package supermercadoOnline.web;
+
+import java.util.List;
+
+import javax.annotation.PostConstruct;
+import javax.ejb.EJB;
+import javax.faces.bean.ManagedProperty;
+import javax.faces.bean.RequestScoped;
+import javax.faces.context.FacesContext;
+import javax.inject.Named;
+import javax.servlet.http.HttpSession;
+
+
+
+import org.apache.taglibs.standard.lang.jstl.test.Bean1;
+
+import es.unican.ps.supermercadoOnline.domain.Articulo;
+import es.unican.ps.supermercadoOnline.domain.Usuario;
+import es.unican.ps.supermercadoOnline.utils.IListarArticulosRemote;
+import es.unican.ps.supermercadoOnline.utils.IRegistroUsuarioRemote;
+
+@Named
+@RequestScoped
+public class supermercadoOnlineIniciaCompraBean {
+	@EJB
+	private IListarArticulosRemote remote;
+	@ManagedProperty("#{supermercadoOnlineTiendaWebBean}")
+    private Bean1 bean1;
+	
+	//valores vinculados a los facelets
+	private String nombre;
+	private double precio;
+	private List<Articulo> listaArticulos;
+	
+	
+	//metodos de accion
+	public String add(){
+		
+		
+		return "tiendaWeb.xhtml";
+	}
+	
+	@PostConstruct
+	public void init(){
+		listaArticulos = remote.listArticulos();
+	}
+}

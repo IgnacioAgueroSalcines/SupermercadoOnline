@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IRealizaPedido"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IGestionArticulo"/>
-<fullyQualifiedTypeName name="javax.ejb.Remote"/>
-<fullyQualifiedTypeName name="javax.ejb.EJB"/>
-<fullyQualifiedTypeName name="javax.ejb.Stateful"/>
-<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-<fullyQualifiedTypeName name="java.text.DateFormat"/>
-<fullyQualifiedTypeName name="java.util.Queue"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IRegistroUsuarioRemote"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IExisteUsuarioRemote"/>
-<fullyQualifiedTypeName name="testEJB.GestionPedidoRealizadoEJBTest"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.negocio.GestionPedidoRealizadoEJB"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="com.sun.enterprise.admin.servermgmt.xml.stringsubs.Archive"/>
-<fullyQualifiedTypeName name="javax.persistence.Entity"/>
-<fullyQualifiedTypeName name="javax.persistence.Id"/>
 <fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
 <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
 <fullyQualifiedTypeName name="javax.persistence.JoinTable"/>
@@ -40,7 +24,6 @@
 <fullyQualifiedTypeName name="javax.management.Query"/>
 <fullyQualifiedTypeName name="javax.persistence.Query"/>
 <fullyQualifiedTypeName name="com.sun.xml.ws.policy.privateutil.PolicyUtils.Collections"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Comparator"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.ComparatorPedido"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
@@ -50,14 +33,31 @@
 <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IRealizaPedidoRemote"/>
 <fullyQualifiedTypeName name="org.junit.AfterClass"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Usuario"/>
 <fullyQualifiedTypeName name="javax.validation.constraints.AssertTrue"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.LineaPedido"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Articulo"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="javax.ejb.Stateless"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IPedidoDAO"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="javax.faces.bean.RequestScoped"/>
+<fullyQualifiedTypeName name="javax.inject.Named"/>
+<fullyQualifiedTypeName name="javax.ejb.EJB"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IRegistroUsuarioRemote"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Usuario"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Articulo"/>
+<fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IListarArticulosRemote"/>
+<fullyQualifiedTypeName name="javax.faces.context.FacesContext"/>
+<fullyQualifiedTypeName name="javax.enterprise.inject.spi.Bean"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="javax.faces.bean.ManagedProperty"/>
+<fullyQualifiedTypeName name="javax.faces.bean.ManagedBean"/>
+<fullyQualifiedTypeName name="org.apache.taglibs.standard.lang.jstl.test.Bean1"/>
+<fullyQualifiedTypeName name="supermercadoOnline.web.supermercadoOnlineTiendaWebBean"/>
+<fullyQualifiedTypeName name="javax.inject.Inject"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IGestionArticuloRemote"/>
+<fullyQualifiedTypeName name="javax.faces.bean.SessionScoped"/>
 </qualifiedTypeNameHistroy>

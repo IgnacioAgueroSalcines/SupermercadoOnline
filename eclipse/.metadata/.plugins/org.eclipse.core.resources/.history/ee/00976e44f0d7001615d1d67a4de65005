@@ -1,0 +1,37 @@
+package supermercadoOnline.web;
+
+import java.util.List;
+
+import javax.ejb.EJB;
+import javax.faces.bean.RequestScoped;
+import javax.inject.Named;
+
+import es.unican.ps.supermercadoOnline.domain.Articulo;
+import es.unican.ps.supermercadoOnline.utils.IListarArticulosRemote;
+
+@Named
+@RequestScoped
+public class supermercadoOnlineConfirmaCompraBean {
+	@EJB
+	private IListarArticulosRemote remote;
+
+	//valores vinculados a los facelets
+	private double precio;
+	private String nombreArticulo;
+
+	//metodos de accion
+	public String add(){
+
+		return "realizadaCompra.xhtml";
+	}
+	
+	public String goBack(){
+
+		return "iniciaCompra.xhtml";
+	}
+	
+	public String goInit(){
+
+		return "index.xhtml";
+	}
+}

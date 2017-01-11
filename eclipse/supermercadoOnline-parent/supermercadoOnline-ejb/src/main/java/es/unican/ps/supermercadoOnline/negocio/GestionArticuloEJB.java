@@ -27,4 +27,9 @@ public class GestionArticuloEJB implements IGestionArticuloRemote{
 		return res;
 	}
 
+	public Articulo getArticulo(long id) {
+		Articulo res = gestionArticulo.getArticulo(id);
+		return res;
+	}
+
 }
