@@ -3,6 +3,7 @@ package es.unican.ps.supermercadoOnline.utils;
 import java.util.List;
 
 import javax.ejb.Remote;
+import javax.ejb.Stateful;
 
 import es.unican.ps.supermercadoOnline.domain.Articulo;
 

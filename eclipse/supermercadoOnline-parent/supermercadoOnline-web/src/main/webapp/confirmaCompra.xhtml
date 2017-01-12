@@ -29,12 +29,12 @@
 		
 		<h:panelGrid columns="2">
 			<h:outputLabel value="Precio Total :" />
-			<h:outputLabel
-				value="#{supermercadoOnlineConfirmaCompraBean.total}" />
+			<h:outputText
+				value="#{supermercadoOnlineConfirmaCompraBean.precio}" />
 
 		</h:panelGrid>
-		<h:commandButton id="confirmaCarro" value="Confirmar Carro" action="#{supermercadoOnlineConfirmaCompraBean.goEnd}" />
-		<h:commandButton id="volverLista" value="Volver a la lista" action="#{supermercadoOnlineIndexBean.goBack}" />
+		<h:commandButton  value="Confirmar Carro" action="#{supermercadoOnlineConfirmaCompraBean.goEnd}" />
+		<h:commandButton  value="Volver a la lista" action="#{supermercadoOnlineIndexBean.goBack}" />
 
 	</h:form>
 </h:body>

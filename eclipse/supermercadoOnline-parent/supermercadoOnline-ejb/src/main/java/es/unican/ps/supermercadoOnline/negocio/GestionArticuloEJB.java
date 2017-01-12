@@ -1,6 +1,7 @@
 package es.unican.ps.supermercadoOnline.negocio;
 
 import javax.ejb.EJB;
+import javax.ejb.Remote;
 import javax.ejb.Stateless;
 
 import es.unican.ps.supermercadoOnline.domain.Articulo;

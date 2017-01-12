@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 
 import javax.ejb.EJB;
+import javax.ejb.Remote;
 import javax.ejb.Stateful;
 
 import es.unican.ps.supermercadoOnline.domain.LineaPedido;

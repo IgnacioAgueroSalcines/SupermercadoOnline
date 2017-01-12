@@ -20,16 +20,25 @@
 			<groupId>es.unican.ps</groupId>
 			<artifactId>supermercadoOnline-common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+			<type>jar</type>
 		</dependency>
 		<dependency>
 			<groupId>es.unican.ps</groupId>
 			<artifactId>supermercadoOnline-dao</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+			<type>ejb</type>
 		</dependency>
 		<dependency>
 			<groupId>es.unican.ps</groupId>
 			<artifactId>supermercadoOnline-ejb</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+			<type>ejb</type>
+		</dependency>
+		<dependency>
+			<groupId>es.unican.ps</groupId>
+			<artifactId>supermercadoOnline-web</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>war</type>
 		</dependency>
 	</dependencies>
 
@@ -38,7 +47,40 @@
 	</properties>
 
 	<build>
+	<!-- The ear plugin must include the definition for "modules", for any 
+				modules that are needed to be included in the EAR file, you need to specify 
+				them one by one, e.g. "ejbModule", "webModule", "jarModule" and "appClientModule". -->
+		
 		<plugins>
+		<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ear-plugin</artifactId>
+				<version>2.8</version>
+				<configuration>
+					<version>6</version>
+					<defaultLibBundleDir>lib</defaultLibBundleDir>
+					<modules>
+						<ejbModule>
+							<groupId>es.unican.ps</groupId>
+							<artifactId>supermercadoOnline-ejb</artifactId>
+						</ejbModule>
+						<ejbModule>
+							<groupId>es.unican.ps</groupId>
+							<artifactId>supermercadoOnline-dao</artifactId>
+						</ejbModule>
+						<webModule>
+							<groupId>es.unican.ps</groupId>
+							<artifactId>supermercadoOnline-web</artifactId>
+						</webModule>
+						<!--  Este módulo es solo una librería, se añade como jarModule de modo
+						      que se añade a la carpeta lib del ear -->
+						<jarModule>
+							<groupId>es.unican.ps</groupId>
+							<artifactId>supermercadoOnline-common</artifactId>
+						</jarModule>
+					</modules>
+				</configuration>
+			</plugin>
 		<!-- Módulo que permite desplegar automáticamente en Glassfish-->
 			<plugin>
 				<groupId>org.glassfish.maven.plugin</groupId>

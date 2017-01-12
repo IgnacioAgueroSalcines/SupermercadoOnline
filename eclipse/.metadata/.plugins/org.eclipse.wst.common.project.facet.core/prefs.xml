@@ -6,4 +6,9 @@
       </node>
     </node>
   </facet>
+  <facet id="jst.jsf">
+    <node name="libprov">
+      <node name="last-provider-used"/>
+    </node>
+  </facet>
 </root>
