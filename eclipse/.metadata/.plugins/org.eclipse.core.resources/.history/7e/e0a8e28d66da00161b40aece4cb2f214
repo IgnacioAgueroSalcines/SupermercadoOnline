@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Calculator</title>
+</h:head>
+<h:body>
+	<h1>Carrito Compra</h1>
+	<h:form>
+		<h:dataTable
+			value="#{supermercadoOnlineIniciaCompraBean.listaArticulos}"
+			var="articulo">
+
+			<h:column>
+				<!-- column header -->
+				<f:facet name="header">Nombre</f:facet>
+				<!-- row record -->
+    				#{articulo.nombreArticulo}
+    			</h:column>
+
+			<h:column>
+				<f:facet name="header">Precio</f:facet>
+    				#{articulo.precioUnitario}
+    			</h:column>
+
+		</h:dataTable>
+		
+		<h:panelGrid columns="2">
+			<h:outputLabel value="Precio Total :" />
+			<h:outputText
+				value="#{supermercadoOnlineConfirmaCompraBean.precio}" />
+
+		</h:panelGrid>
+		<h:commandButton  value="Confirmar Carro" action="#{supermercadoOnlineConfirmaCompraBean.goEnd}" />
+		<h:commandButton  value="Volver a la lista" action="#{supermercadoOnlineIndexBean.goBack}" />
+
+	</h:form>
+</h:body>
+</html>

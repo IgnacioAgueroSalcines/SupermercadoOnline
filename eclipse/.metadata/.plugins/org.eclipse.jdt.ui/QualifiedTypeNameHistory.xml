@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
-<fullyQualifiedTypeName name="javax.persistence.JoinTable"/>
-<fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
 <fullyQualifiedTypeName name="java.lang.reflect.ParameterizedType"/>
 <fullyQualifiedTypeName name="javax.persistence.PersistenceContext"/>
 <fullyQualifiedTypeName name="javax.persistence.criteria.CriteriaBuilder"/>
@@ -34,18 +31,15 @@
 <fullyQualifiedTypeName name="javax.validation.constraints.AssertTrue"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.LineaPedido"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="javax.ejb.Stateless"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IPedidoDAO"/>
-<fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="javax.faces.bean.RequestScoped"/>
 <fullyQualifiedTypeName name="javax.inject.Named"/>
 <fullyQualifiedTypeName name="javax.ejb.EJB"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IRegistroUsuarioRemote"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Usuario"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Articulo"/>
 <fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
 <fullyQualifiedTypeName name="javax.faces.context.FacesContext"/>
 <fullyQualifiedTypeName name="javax.enterprise.inject.spi.Bean"/>
@@ -57,7 +51,13 @@
 <fullyQualifiedTypeName name="javax.inject.Inject"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IGestionArticuloRemote"/>
 <fullyQualifiedTypeName name="javax.faces.bean.SessionScoped"/>
-<fullyQualifiedTypeName name="javax.enterprise.context.SessionScoped"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IListarArticulosRemote"/>
+<fullyQualifiedTypeName name="supermercadoOnline.web.SupermercadoOnlineIniciaCompraBean"/>
+<fullyQualifiedTypeName name="supermercadoOnline.web.SupermercadoOnlineConfirmaCompraBean"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Articulo"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="javax.enterprise.context.SessionScoped"/>
+<fullyQualifiedTypeName name="javax.enterprise.context.RequestScoped"/>
 </qualifiedTypeNameHistroy>

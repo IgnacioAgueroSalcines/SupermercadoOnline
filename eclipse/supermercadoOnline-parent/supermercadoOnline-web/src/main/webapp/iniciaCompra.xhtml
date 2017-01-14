@@ -5,36 +5,39 @@
 	xmlns:f="http://java.sun.com/jsf/core">
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-	<title>Calculator</title>
+	<title>Supermercado</title>
 </h:head>
 <h:body>
 	<h1>Artículos</h1>
 	<h:form>
 		<h:dataTable
 			value="#{supermercadoOnlineIniciaCompraBean.listaArticulos}"
-			var="articulo">
+			var="articulo" border="0" cellpadding="4" cellspacing="0" 
+			rules="all" style="border:solid 1px">
 
 			<h:column>
 				<!-- column header -->
-				<f:facet name="header"><h:outputText value="Nombre"/></f:facet>
+				<f:facet name="header">
+					<h:outputText value="Nombre" />
+				</f:facet>
 				<!-- row record -->
-    				<h:outputText value="articulo.nombre"/>
-    			</h:column>
+				<h:outputText value="#{articulo.nombre}" />
+			</h:column>
 
 			<h:column>
-				<f:facet name="header"><h:outputText value="Precio"/></f:facet>
-    				<h:outputText value="articulo.precio"/>
-    			</h:column>
+				<f:facet name="header">
+					<h:outputText value="Precio" />
+				</f:facet>
+				<h:outputText value="#{articulo.precio}" />
+			</h:column>
 
 			<h:column>
 				<f:facet name="header"></f:facet>
-				<h:outputLabel value="Añadir al carro"
-					onclick="#{supermercadoOnlineIniciaCompraBean.add(articulo.id)}" />
+				<h:commandLink action="#{supermercadoOnlineIniciaCompraBean.add(articulo.id)}">"Añadir al carro"</h:commandLink>
 			</h:column>
 		</h:dataTable>
-
-		<h:outputLabel value="Ver carro"
-			onclick="#{supermercadoOnlineIniciaCompraBean.list()}" />
+		<h:commandLink action="#{supermercadoOnlineIniciaCompraBean.list()}">"Ver carro"</h:commandLink>
+		
 
 	</h:form>
 </h:body>
