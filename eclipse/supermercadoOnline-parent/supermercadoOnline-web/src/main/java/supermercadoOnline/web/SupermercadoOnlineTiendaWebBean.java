@@ -6,6 +6,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.security.DeclareRoles;
+import javax.annotation.security.RolesAllowed;
 import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
@@ -16,6 +18,7 @@ import es.unican.ps.supermercadoOnline.utils.IListarArticulosRemote;
 
 @Named ("supermercadoOnlineTiendaWebBean")
 @SessionScoped
+@DeclareRoles({"USUARIOREGISTRADO"})
 public class SupermercadoOnlineTiendaWebBean implements Serializable{
 	/**
 	 * 
@@ -38,10 +41,14 @@ public class SupermercadoOnlineTiendaWebBean implements Serializable{
 
 	//metodos de accion
 	@PostConstruct
+	@RolesAllowed("USUARIOREGISTRADO")
 	public void init(){
-		nombreArticulo=bean.getArticulo().getNombre();
+		if(bean.getArticulo()!=null){
+			nombreArticulo=bean.getArticulo().getNombre();
+		}
+			
 	}
-	
+	@RolesAllowed("USUARIOREGISTRADO")
 	public String add(){
 		Articulo prov = bean.getArticulo();
 		Articulo a = new Articulo();
@@ -61,10 +68,12 @@ public class SupermercadoOnlineTiendaWebBean implements Serializable{
 		
 		return "confirmaCompra.xhtml";
 	}
-	
+	@RolesAllowed("USUARIOREGISTRADO")
 	public String goBack(){
 		return "iniciaCompra.xhtml";
 	}
+	
+	//metodos observadores
 	public String getNombreArticulo() {
 		return nombreArticulo;
 	}

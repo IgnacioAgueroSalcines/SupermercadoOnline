@@ -5,6 +5,8 @@ import java.io.Serializable;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.security.DeclareRoles;
+import javax.annotation.security.RolesAllowed;
 import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
@@ -15,6 +17,7 @@ import es.unican.ps.supermercadoOnline.utils.IListarArticulosRemote;
 
 @Named ("supermercadoOnlineConfirmaCompraBean")
 @SessionScoped
+@DeclareRoles({"USUARIOREGISTRADO"})
 public class SupermercadoOnlineConfirmaCompraBean implements Serializable{
 	/**
 	 * 
@@ -35,29 +38,37 @@ public class SupermercadoOnlineConfirmaCompraBean implements Serializable{
 	//metodos de accion
 	@PostConstruct
 	public void init(){
-		nombreArticulo=bean.getArticulo().getNombre();
-		precioUnitario=bean.getArticulo().getPrecio();
+		if(bean.getArticulo()!=null){
+			nombreArticulo=bean.getArticulo().getNombre();
+			precioUnitario=bean.getArticulo().getPrecio();
+		}
+			
+		
 	}
+	@RolesAllowed("USUARIOREGISTRADO")
 	public double getPrecioTotal(){
 		double res =0;
-		//bucle que suma los precios
-		List<Articulo> carro= bean2.getCarro();
-		List<Integer> listaunidades=bean2.getUnidadesCarrito();
-		for(int i=0;i<carro.size();i++){
-			res+=carro.get(i).getPrecio()*listaunidades.get(i);
+		if(bean2.getCarro()!=null){
+			//bucle que suma los precios
+			List<Articulo> carro= bean2.getCarro();
+			List<Integer> listaunidades=bean2.getUnidadesCarrito();
+			for(int i=0;i<carro.size();i++){
+				res+=carro.get(i).getPrecio()*listaunidades.get(i);
+			}
 		}
 		return res;
 	}
+	@RolesAllowed("USUARIOREGISTRADO")
 	public String goEnd(){
 
 		return "realizadaCompra.xhtml";
 	}
-	
+	@RolesAllowed("USUARIOREGISTRADO")
 	public String goBack(){
 
 		return "iniciaCompra.xhtml";
 	}
-	
+	@RolesAllowed("USUARIOREGISTRADO")
 	public String goInit(){
 
 		return "index.xhtml";

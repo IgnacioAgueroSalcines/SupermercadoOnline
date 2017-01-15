@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.reflect.ParameterizedType"/>
-<fullyQualifiedTypeName name="javax.persistence.PersistenceContext"/>
-<fullyQualifiedTypeName name="javax.persistence.criteria.CriteriaBuilder"/>
-<fullyQualifiedTypeName name="javax.persistence.criteria.CriteriaQuery"/>
-<fullyQualifiedTypeName name="javax.persistence.criteria.Root"/>
-<fullyQualifiedTypeName name="javax.persistence.TypedQuery"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IGenericDAO"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.GenericDAO"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Pedido"/>
@@ -60,4 +54,10 @@
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="javax.enterprise.context.SessionScoped"/>
 <fullyQualifiedTypeName name="javax.enterprise.context.RequestScoped"/>
+<fullyQualifiedTypeName name="javax.annotation.security.DeclareRoles"/>
+<fullyQualifiedTypeName name="javax.annotation.security.RolesAllowed"/>
+<fullyQualifiedTypeName name="javax.annotation.Resource"/>
+<fullyQualifiedTypeName name="org.jboss.weld.context.SessionContext"/>
+<fullyQualifiedTypeName name="com.sun.xml.rpc.processor.modeler.j2ee.xml.javaXmlTypeMappingType"/>
+<fullyQualifiedTypeName name="javax.ejb.SessionContext"/>
 </qualifiedTypeNameHistroy>
