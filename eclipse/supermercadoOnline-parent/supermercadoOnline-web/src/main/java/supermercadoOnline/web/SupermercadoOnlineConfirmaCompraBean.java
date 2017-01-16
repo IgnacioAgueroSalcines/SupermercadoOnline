@@ -5,8 +5,6 @@ import java.io.Serializable;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
-import javax.annotation.security.DeclareRoles;
-import javax.annotation.security.RolesAllowed;
 import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
@@ -17,7 +15,6 @@ import es.unican.ps.supermercadoOnline.utils.IListarArticulosRemote;
 
 @Named ("supermercadoOnlineConfirmaCompraBean")
 @SessionScoped
-@DeclareRoles({"USUARIOREGISTRADO"})
 public class SupermercadoOnlineConfirmaCompraBean implements Serializable{
 	/**
 	 * 
@@ -45,7 +42,6 @@ public class SupermercadoOnlineConfirmaCompraBean implements Serializable{
 			
 		
 	}
-	@RolesAllowed("USUARIOREGISTRADO")
 	public double getPrecioTotal(){
 		double res =0;
 		if(bean2.getCarro()!=null){
@@ -58,17 +54,14 @@ public class SupermercadoOnlineConfirmaCompraBean implements Serializable{
 		}
 		return res;
 	}
-	@RolesAllowed("USUARIOREGISTRADO")
 	public String goEnd(){
 
 		return "realizadaCompra.xhtml";
 	}
-	@RolesAllowed("USUARIOREGISTRADO")
 	public String goBack(){
 
 		return "iniciaCompra.xhtml";
 	}
-	@RolesAllowed("USUARIOREGISTRADO")
 	public String goInit(){
 
 		return "index.xhtml";

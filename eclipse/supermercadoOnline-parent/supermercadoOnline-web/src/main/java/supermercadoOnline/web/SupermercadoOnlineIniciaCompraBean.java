@@ -4,30 +4,15 @@ import java.io.Serializable;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
-import javax.annotation.security.DeclareRoles;
-import javax.annotation.security.RolesAllowed;
 import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
-
-
-
-
-
-
-
-
-
-
-
-
 import es.unican.ps.supermercadoOnline.domain.Articulo;
 import es.unican.ps.supermercadoOnline.utils.IGestionArticuloRemote;
 import es.unican.ps.supermercadoOnline.utils.IListarArticulosRemote;
 
 @Named ("supermercadoOnlineIniciaCompraBean")
 @SessionScoped
-@DeclareRoles({"USUARIOREGISTRADO"})
 public class SupermercadoOnlineIniciaCompraBean implements Serializable{
 	/**
 	 * 
@@ -45,12 +30,10 @@ public class SupermercadoOnlineIniciaCompraBean implements Serializable{
 
 
 	//metodos de accion
-	@RolesAllowed("USUARIOREGISTRADO")
 	public String add(long id){
 		articulo=gestion.getArticulo(id);
 		return "tiendaWeb.xhtml";
 	}
-	@RolesAllowed("USUARIOREGISTRADO")
 	public String list(){
 
 
@@ -59,7 +42,6 @@ public class SupermercadoOnlineIniciaCompraBean implements Serializable{
 
 
 	@PostConstruct
-	@RolesAllowed("USUARIOREGISTRADO")
 	public void init(){
 		listaArticulos = listar.listArticulos();
 	}
