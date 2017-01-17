@@ -11,15 +11,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 
-//@NamedQueries({@NamedQuery(name="pedidos", query="SELECT v FROM Pedido v")})
 @Entity
 public class Pedido implements Serializable{
 	/**

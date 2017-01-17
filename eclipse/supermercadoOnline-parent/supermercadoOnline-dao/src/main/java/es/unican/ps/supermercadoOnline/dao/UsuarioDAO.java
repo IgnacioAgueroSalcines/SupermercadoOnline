@@ -6,13 +6,13 @@ import java.util.List;
 import es.unican.ps.supermercadoOnline.domain.Usuario;
 import es.unican.ps.supermercadoOnline.utils.GenericDAO;
 import es.unican.ps.supermercadoOnline.utils.IUsuarioDAO;
-import java.util.List;
+
+
+
 
 import javax.ejb.Stateless;
+import javax.persistence.Query;
 
-import es.unican.ps.supermercadoOnline.domain.Pedido;
-import es.unican.ps.supermercadoOnline.utils.GenericDAO;
-import es.unican.ps.supermercadoOnline.utils.IPedidoDAO;
 
 @Stateless
 public class UsuarioDAO extends GenericDAO<Usuario> implements IUsuarioDAO{
@@ -40,6 +40,15 @@ public class UsuarioDAO extends GenericDAO<Usuario> implements IUsuarioDAO{
 
 	public Usuario getUsuario(long id) {
 		return this.getElement(id);
+	}
+
+	public Usuario getUsuarioNombre(String nombre) {
+		Usuario res=null;
+		
+		Query query = em.createQuery("SELECT u FROM Usuario u WHERE nombre="+nombre);
+		res= (Usuario)query.getSingleResult() ;
+		
+		return res;
 	}
 
 	

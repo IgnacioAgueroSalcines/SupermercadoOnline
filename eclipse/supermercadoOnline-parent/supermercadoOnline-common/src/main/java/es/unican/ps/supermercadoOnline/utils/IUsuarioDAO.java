@@ -14,4 +14,5 @@ public interface IUsuarioDAO {
 	public Usuario updateUsuario(Usuario usuario);
 	public List<Usuario> listaUsuarios();
 	public Usuario getUsuario(long id);
+	public Usuario getUsuarioNombre(String nombre);
 }

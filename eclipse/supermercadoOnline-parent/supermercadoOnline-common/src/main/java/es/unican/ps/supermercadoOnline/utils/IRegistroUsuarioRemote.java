@@ -8,5 +8,6 @@ import es.unican.ps.supermercadoOnline.domain.Usuario;
 public interface IRegistroUsuarioRemote {
 	
 	public Usuario addUsuario (Usuario usuario);
+	public Usuario getUsuario(String nombre);
 
 }

@@ -37,12 +37,6 @@ public class SupermercadoOnlineTiendaWebBean implements Serializable{
 	//metodos de accion
 
 	public String add(){
-		String result="tiendaWeb.xhtml";
-		if(unidades<=0){
-			
-		}else if(unidades>bean.getArticulo().getUnidadesStock()){
-			
-		}else{
 			Articulo prov = bean.getArticulo();
 			Articulo a = new Articulo();
 			a.setNombre(prov.getNombre());
@@ -59,11 +53,7 @@ public class SupermercadoOnlineTiendaWebBean implements Serializable{
 			carro = res;
 			unidadesCarrito=listaunidades;
 			unidades=0;
-			result = "confirmaCompra.xhtml";
-		}
-		
-		
-		return result;
+			return "confirmaCompra.xhtml";
 	}
 	public String goBack(){
 		return "iniciaCompra.xhtml";

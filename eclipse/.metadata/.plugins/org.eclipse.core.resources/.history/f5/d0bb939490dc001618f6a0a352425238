@@ -1,0 +1,52 @@
+package controlador;
+
+
+import es.unican.ps.supermercadoOnline.utils.IPreparacionPedidoRemote;
+import es.unican.ps.supermercadoOnline.utils.IRealizaPedidoRemote;
+import vista.VentanaDependientes;
+
+
+
+
+
+/**
+ * Controlador de la aplicacion de compras. Se encarga de responder a los eventos generados
+ * por las acciones del usuario sobre la vista (p.e. pulsaciones de botones, ...)
+ * 
+ * @author ProcesosSoftware
+ * @version mar-2014
+ */
+public class ControladorDependientes {
+	// vista de la aplicacion
+	private VentanaDependientes vista;
+	
+	private IPreparacionPedidoRemote preparacion;
+	private IRealizaPedidoRemote realiza;
+	
+	/*
+	 * Construye el controlador y asocia la vista
+	 * @param vista vista con la que se asocia el controlador
+	 */
+	public ControladorDependientes(VentanaDependientes vista) {
+		this.vista = vista;
+		
+	}
+	
+	
+	
+	/**
+	 * Invocado al pulsarse el bot�n de crear nuevo carrito
+	 */
+	public void procesarPedido() {
+	}
+
+	
+	/**
+	 * Invocado al pulsarse el boton de confirmacion de pedido.
+	 */
+	public void entregarPedido() {
+	}
+
+	
+
+}

@@ -24,9 +24,45 @@
 		</web-resource-collection>
 		<auth-constraint>
 			<role-name>USUARIOREGISTRADO</role-name>
+		</auth-constraint>
+		<user-data-constraint>
+			<transport-guarantee>CONFIDENTIAL</transport-guarantee>
+		</user-data-constraint>
+	</security-constraint>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>SupermercadoOnline</web-resource-name>
+			<url-pattern>/gerencia.jsf</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
 			<role-name>GERENTE</role-name>
-			<role-name>DEPENDIENTE</role-name>
+		</auth-constraint>
+		<user-data-constraint>
+			<transport-guarantee>CONFIDENTIAL</transport-guarantee>
+		</user-data-constraint>
+	</security-constraint>
+	
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>SupermercadoOnline</web-resource-name>
+			<url-pattern>/registry.jsf</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
 			<role-name>USUARIO</role-name>
+		</auth-constraint>
+		<user-data-constraint>
+			<transport-guarantee>CONFIDENTIAL</transport-guarantee>
+		</user-data-constraint>
+	</security-constraint>
+	
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>SupermercadoOnline</web-resource-name>
+			<url-pattern>/dependencia.jsf</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>DEPENDIENTE</role-name>
 		</auth-constraint>
 		<user-data-constraint>
 			<transport-guarantee>CONFIDENTIAL</transport-guarantee>
@@ -40,7 +76,6 @@
 		</web-resource-collection>
 		<auth-constraint>
 			<role-name>USUARIOREGISTRADO</role-name>
-			
 		</auth-constraint>
 		<user-data-constraint>
 			<transport-guarantee>CONFIDENTIAL</transport-guarantee>
@@ -53,7 +88,6 @@
 			<url-pattern>/tiendaWeb.jsf</url-pattern>
 		</web-resource-collection>
 		<auth-constraint>
-
 			<role-name>USUARIOREGISTRADO</role-name>
 		</auth-constraint>
 		<user-data-constraint>
@@ -67,7 +101,6 @@
 			<url-pattern>/confirmaCompra.jsf</url-pattern>
 		</web-resource-collection>
 		<auth-constraint>
-
 			<role-name>USUARIOREGISTRADO</role-name>
 		</auth-constraint>
 		<user-data-constraint>
@@ -81,7 +114,6 @@
 			<url-pattern>/realizadaCompra.jsf</url-pattern>
 		</web-resource-collection>
 		<auth-constraint>
-
 			<role-name>USUARIOREGISTRADO</role-name>
 		</auth-constraint>
 		<user-data-constraint>

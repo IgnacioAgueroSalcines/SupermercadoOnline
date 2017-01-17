@@ -5,11 +5,13 @@
 			<item value="es.unican.ps"/>
 		</list>
 		<list key="name">
+			<item value="SupermercadoOnlineEscritorio"/>
 			<item value="supermercadoOnline-web"/>
 		</list>
 		<list key="artifactId">
-			<item value="supermercadoOnline-web"/>
+			<item value="SupermercadoOnlineEscritorio"/>
 			<item value="supermercadoOnline-parent"/>
+			<item value="supermercadoOnline-web"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -54,6 +56,7 @@
 	</section>
 	<section name="MavenModuleWizardParentPage">
 		<list key="moduleName">
+			<item value="SupermercadoOnlineEscritorio"/>
 			<item value="supermercadoOnline-web"/>
 			<item value="supermercadoOnline-test"/>
 			<item value="supermercadoOnline-ear"/>
@@ -89,13 +92,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="org.supermercadoOnline.web"/>
+			<item value="org.SupermercadoOnlineEscritorio"/>
 		</list>
 		<list key="groupId">
 			<item value="es.unican.ps"/>
 		</list>
 		<list key="artifactId">
-			<item value="supermercadoOnline-web"/>
+			<item value="SupermercadoOnlineEscritorio"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

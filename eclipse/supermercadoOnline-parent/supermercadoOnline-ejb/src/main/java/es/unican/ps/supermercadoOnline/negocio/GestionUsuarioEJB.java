@@ -34,6 +34,10 @@ public class GestionUsuarioEJB implements IRegistroUsuarioRemote,IExisteUsuarioR
 		return gestionUsuario.addUsuario(usuario);
 	}
 
+	public Usuario getUsuario(String nombre) {
+		return gestionUsuario.getUsuarioNombre(nombre);
+	}
+
 	
 
 }

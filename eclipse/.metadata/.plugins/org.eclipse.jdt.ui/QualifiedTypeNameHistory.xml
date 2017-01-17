@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IGenericDAO"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.GenericDAO"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Pedido"/>
-<fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
-<fullyQualifiedTypeName name="org.apache.jasper.tagplugins.jstl.When"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.EstadoPedido"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="javax.persistence.NamedQuery"/>
 <fullyQualifiedTypeName name="javax.persistence.NamedQueries"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="javax.management.Query"/>
-<fullyQualifiedTypeName name="javax.persistence.Query"/>
 <fullyQualifiedTypeName name="com.sun.xml.ws.policy.privateutil.PolicyUtils.Collections"/>
 <fullyQualifiedTypeName name="java.util.Comparator"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.ComparatorPedido"/>
@@ -20,7 +14,6 @@
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IUsuarioDAO"/>
 <fullyQualifiedTypeName name="javax.ejb.embeddable.EJBContainer"/>
 <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IRealizaPedidoRemote"/>
 <fullyQualifiedTypeName name="org.junit.AfterClass"/>
 <fullyQualifiedTypeName name="javax.validation.constraints.AssertTrue"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.LineaPedido"/>
@@ -42,7 +35,6 @@
 <fullyQualifiedTypeName name="javax.faces.bean.ManagedBean"/>
 <fullyQualifiedTypeName name="org.apache.taglibs.standard.lang.jstl.test.Bean1"/>
 <fullyQualifiedTypeName name="supermercadoOnline.web.supermercadoOnlineTiendaWebBean"/>
-<fullyQualifiedTypeName name="javax.inject.Inject"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IGestionArticuloRemote"/>
 <fullyQualifiedTypeName name="javax.faces.bean.SessionScoped"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
@@ -57,7 +49,15 @@
 <fullyQualifiedTypeName name="javax.annotation.security.DeclareRoles"/>
 <fullyQualifiedTypeName name="javax.annotation.security.RolesAllowed"/>
 <fullyQualifiedTypeName name="javax.annotation.Resource"/>
-<fullyQualifiedTypeName name="org.jboss.weld.context.SessionContext"/>
 <fullyQualifiedTypeName name="com.sun.xml.rpc.processor.modeler.j2ee.xml.javaXmlTypeMappingType"/>
 <fullyQualifiedTypeName name="javax.ejb.SessionContext"/>
+<fullyQualifiedTypeName name="javax.inject.Inject"/>
+<fullyQualifiedTypeName name="javax.annotation.Resources"/>
+<fullyQualifiedTypeName name="org.jboss.weld.context.SessionContext"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IPreparacionPedidoRemote"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IRealizaPedidoRemote"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Pedido"/>
+<fullyQualifiedTypeName name="java.awt.Container"/>
+<fullyQualifiedTypeName name="java.awt.Component"/>
+<fullyQualifiedTypeName name="javax.persistence.Query"/>
 </qualifiedTypeNameHistroy>
