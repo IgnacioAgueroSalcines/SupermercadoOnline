@@ -4,9 +4,7 @@ import java.util.Date;
 
 import javax.ejb.Remote;
 
-import es.unican.ps.supermercadoOnline.domain.Articulo;
 import es.unican.ps.supermercadoOnline.domain.LineaPedido;
-import es.unican.ps.supermercadoOnline.domain.Pedido;
 import es.unican.ps.supermercadoOnline.domain.Usuario;
 
 @Remote

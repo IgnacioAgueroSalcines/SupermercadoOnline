@@ -4,7 +4,6 @@ import java.util.Collections;
 import java.util.List;
 
 import javax.ejb.EJB;
-import javax.ejb.Remote;
 import javax.ejb.Stateless;
 
 

@@ -1,10 +1,12 @@
 package es.unican.ps.supermercadoOnline.negocio;
 
+import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
 import javax.ejb.EJB;
-import javax.ejb.Remote;
+import javax.ejb.Remove;
 import javax.ejb.Stateful;
 
 import es.unican.ps.supermercadoOnline.domain.LineaPedido;
@@ -15,8 +17,7 @@ import es.unican.ps.supermercadoOnline.utils.*;
 public class GestionPedidoRealizadoEJB implements IRealizaPedidoRemote{
 
 	@EJB
-	private IPedidoDAO gestionPedido;
-	
+	private IPedidoDAO gestionPedido;	
 	private Pedido pedidoActual;	
 
 	private Usuario usuario;
@@ -25,26 +26,36 @@ public class GestionPedidoRealizadoEJB implements IRealizaPedidoRemote{
 		this.usuario=usuario;
 		this.pedidoActual=new Pedido();
 	}
-
+	@Remove
 	public int confirmPedido(Date horaRecogida) {
-		Date date = new Date();
+		Calendar c = Calendar.getInstance();
+		Date date = c.getTime();
+		pedidoActual.setUsuario(usuario);
 		pedidoActual.setFecha(date);
 		pedidoActual.setHoraRecogida(horaRecogida);
-		pedidoActual.setUsuario(usuario);
 		Pedido res= gestionPedido.addPedido(pedidoActual);
 		return (int)res.getId();
 	}
 
 	public LineaPedido addLineaPedido(LineaPedido linea) {
-		List<LineaPedido> list=pedidoActual.getLineasPedido();
-		list.add(linea);
 		LineaPedido res=null;
+		//añadir linea
+		List<LineaPedido> list=pedidoActual.getLineasPedido();
+		if(list==null){
+			list = new ArrayList<LineaPedido>();
+		}
+		list.add(linea);
+
+		pedidoActual.setLineasPedido(list);
+		
 		for(LineaPedido l : list){
 			if(l.getId()==linea.getId())
 				res= l;
 		}
+		
 		return res;
 	}
+
 
 
 

@@ -1,0 +1,17 @@
+package es.unican.ps.supermercadoOnline.utils;
+
+import java.util.List;
+
+import javax.ejb.Remote;
+
+import es.unican.ps.supermercadoOnline.domain.LineaPedido;
+
+@Remote
+public interface ILineaPedidoDAO {
+
+	public LineaPedido addLineaPedido(LineaPedido linea);
+	public LineaPedido removeLineaPedido(LineaPedido articulo);
+	public LineaPedido updateLineaPedido(LineaPedido articulo);
+	public List<LineaPedido> listaPedido();
+	public LineaPedido getLineaPedido(long id);
+}

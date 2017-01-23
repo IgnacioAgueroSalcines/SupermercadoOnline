@@ -1,0 +1,69 @@
+package es.unican.ps.supermercadoOnline.dao;
+
+import java.util.List;
+
+import es.unican.ps.supermercadoOnline.domain.Articulo;
+import es.unican.ps.supermercadoOnline.domain.LineaPedido;
+import es.unican.ps.supermercadoOnline.utils.GenericDAO;
+import es.unican.ps.supermercadoOnline.utils.IArticuloDAO;
+import es.unican.ps.supermercadoOnline.utils.ILineaPedidoDAO;
+
+import java.util.List;
+
+import javax.ejb.Stateless;
+
+import es.unican.ps.supermercadoOnline.domain.Pedido;
+import es.unican.ps.supermercadoOnline.utils.GenericDAO;
+import es.unican.ps.supermercadoOnline.utils.IPedidoDAO;
+
+@Stateless
+public class LineaPedidoDAO extends GenericDAO<LineaPedido> implements ILineaPedidoDAO{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public Articulo addArticulo(Articulo articulo) {
+		return this.addElement(articulo);
+	}
+
+	public Articulo removeArticulo(Articulo articulo) {
+		return this.removeElement(articulo);
+	}
+
+	public Articulo updateArticulo(Articulo articulo) {
+		return this.updateElement(articulo);
+	}
+
+	public List<Articulo> listaArticulos() {
+		return this.listaElement();
+	}
+
+	public Articulo getArticulo(long id) {
+		return this.getElement(id);
+	}
+
+	public LineaPedido addLineaPedido(LineaPedido linea) {
+		
+	}
+
+	public LineaPedido removeLineaPedido(LineaPedido linea) {
+		return this.removeElement(linea);
+	}
+
+	public LineaPedido updateLineaPedido(LineaPedido linea) {
+		return this.updateElement(linea);
+	}
+
+	public List<LineaPedido> listaPedido() {
+		return this.listaElement();
+	}
+
+	public LineaPedido getLineaPedido(long id) {
+		return this.getElement(id);
+	}
+
+	
+
+}

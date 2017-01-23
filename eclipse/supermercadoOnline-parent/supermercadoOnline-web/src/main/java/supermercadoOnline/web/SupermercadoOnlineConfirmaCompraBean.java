@@ -2,16 +2,18 @@ package supermercadoOnline.web;
 
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
+import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
 
 import es.unican.ps.supermercadoOnline.domain.Articulo;
-import es.unican.ps.supermercadoOnline.utils.IListarArticulosRemote;
+import es.unican.ps.supermercadoOnline.utils.IRealizaPedidoRemote;
 
 @Named ("supermercadoOnlineConfirmaCompraBean")
 @SessionScoped
@@ -20,8 +22,11 @@ public class SupermercadoOnlineConfirmaCompraBean implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
+
 	@EJB
-	private IListarArticulosRemote remote;
+	private IRealizaPedidoRemote remote2;
+	
 	@Inject
 	private SupermercadoOnlineIniciaCompraBean bean;
 	@Inject
@@ -30,6 +35,7 @@ public class SupermercadoOnlineConfirmaCompraBean implements Serializable{
 	//valores vinculados a los facelets
 	private double precioUnitario;
 	private String nombreArticulo;
+	private Date date;
 	
 
 	//metodos de accion
@@ -54,8 +60,14 @@ public class SupermercadoOnlineConfirmaCompraBean implements Serializable{
 		}
 		return res;
 	}
+	
+	public void logOut(){
+		FacesContext.getCurrentInstance().getExternalContext().invalidateSession();
+	}
+	
 	public String goEnd(){
-
+		remote2.confirmPedido(date);
+		logOut();
 		return "realizadaCompra.xhtml";
 	}
 	public String goBack(){
@@ -82,6 +94,15 @@ public class SupermercadoOnlineConfirmaCompraBean implements Serializable{
 	}
 	public void setNombreArticulo(String nombreArticulo) {
 		this.nombreArticulo = nombreArticulo;
+	}
+	public Date getDate() {
+		return date;
+	}
+	public void setDate(Date date) {
+		this.date = date;
+	}
+	public IRealizaPedidoRemote getRemote2() {
+		return remote2;
 	}
 	
 	

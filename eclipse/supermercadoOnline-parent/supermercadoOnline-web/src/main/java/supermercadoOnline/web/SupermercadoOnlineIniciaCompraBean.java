@@ -7,6 +7,7 @@ import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
+
 import es.unican.ps.supermercadoOnline.domain.Articulo;
 import es.unican.ps.supermercadoOnline.utils.IGestionArticuloRemote;
 import es.unican.ps.supermercadoOnline.utils.IListarArticulosRemote;
@@ -18,13 +19,15 @@ public class SupermercadoOnlineIniciaCompraBean implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	@EJB
-	private IListarArticulosRemote listar;
+	
 	@EJB
 	private IGestionArticuloRemote gestion;
+	@EJB
+	private IListarArticulosRemote remote;
 	//valores vinculados a los facelets
 	private String nombre;
 	private double precio;
+	
 	private List<Articulo> listaArticulos;
 	private Articulo articulo;
 
@@ -43,19 +46,14 @@ public class SupermercadoOnlineIniciaCompraBean implements Serializable{
 
 	@PostConstruct
 	public void init(){
-		listaArticulos = listar.listArticulos();
+		listaArticulos = remote.listArticulos();
 	}
 	
 	//metodos observadores
 	public Articulo getArticulo(){
 		return articulo;
 	}
-	public IListarArticulosRemote getListar() {
-		return listar;
-	}
-	public void setListar(IListarArticulosRemote listar) {
-		this.listar = listar;
-	}
+
 	public String getNombre() {
 		return nombre;
 	}
@@ -84,4 +82,7 @@ public class SupermercadoOnlineIniciaCompraBean implements Serializable{
 		this.listaArticulos = listaArticulos;
 	}
 	
+	public IListarArticulosRemote getRemote() {
+		return remote;
+	}
 }

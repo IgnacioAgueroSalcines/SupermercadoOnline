@@ -45,7 +45,7 @@ public class UsuarioDAO extends GenericDAO<Usuario> implements IUsuarioDAO{
 	public Usuario getUsuarioNombre(String nombre) {
 		Usuario res=null;
 		
-		Query query = em.createQuery("SELECT u FROM Usuario u WHERE nombre="+nombre);
+		Query query = em.createQuery("SELECT u FROM Usuario u WHERE u.nombre='"+nombre+"'");
 		res= (Usuario)query.getSingleResult() ;
 		
 		return res;

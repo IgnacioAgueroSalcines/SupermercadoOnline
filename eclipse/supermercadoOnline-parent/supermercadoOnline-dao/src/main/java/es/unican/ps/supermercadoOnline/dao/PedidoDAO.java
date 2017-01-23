@@ -16,8 +16,6 @@ public class PedidoDAO extends GenericDAO<Pedido> implements IPedidoDAO{
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	
-
 	public Pedido addPedido(Pedido pedido) {
 		return this.addElement(pedido);
 	}
