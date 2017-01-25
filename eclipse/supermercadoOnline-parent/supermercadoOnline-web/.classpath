@@ -32,5 +32,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="D:/cuarto/1cuatri/procesosSoftware/practicas/practica7.1/SupermercadoOnline/selenium-html-runner-3.0.1 (1).jar"/>
+	<classpathentry kind="lib" path="D:/cuarto/1cuatri/procesosSoftware/practicas/practica7.1/SupermercadoOnline/selenium-server-standalone-3.0.1 (1).jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

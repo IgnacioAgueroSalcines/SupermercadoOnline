@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IArticuloDAO"/>
-<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IUsuarioDAO"/>
-<fullyQualifiedTypeName name="javax.ejb.embeddable.EJBContainer"/>
 <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
 <fullyQualifiedTypeName name="org.junit.AfterClass"/>
 <fullyQualifiedTypeName name="javax.validation.constraints.AssertTrue"/>
@@ -12,7 +9,6 @@
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IPedidoDAO"/>
 <fullyQualifiedTypeName name="javax.faces.bean.RequestScoped"/>
 <fullyQualifiedTypeName name="javax.inject.Named"/>
-<fullyQualifiedTypeName name="javax.ejb.EJB"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IRegistroUsuarioRemote"/>
 <fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.domain.Usuario"/>
 <fullyQualifiedTypeName name="java.util.List"/>
@@ -60,4 +56,8 @@
 <fullyQualifiedTypeName name="org.eclipse.persistence.annotations.CascadeOnDelete"/>
 <fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="es.unican.ps.supermercadoOnline.utils.IUsuarioDAO"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
+<fullyQualifiedTypeName name="javax.ejb.EJB"/>
 </qualifiedTypeNameHistroy>

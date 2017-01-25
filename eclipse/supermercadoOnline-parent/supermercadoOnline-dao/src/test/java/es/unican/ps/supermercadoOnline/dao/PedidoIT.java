@@ -21,11 +21,13 @@ import es.unican.ps.supermercadoOnline.domain.Pedido;
 import es.unican.ps.supermercadoOnline.domain.Usuario;
 import es.unican.ps.supermercadoOnline.utils.IPedidoDAO;
 import es.unican.ps.supermercadoOnline.utils.IRealizaPedidoRemote;
+import es.unican.ps.supermercadoOnline.utils.IUsuarioDAO;
 
 public class PedidoIT {
 
 	private static EJBContainer ec;
-	private static IPedidoDAO remote;
+	private static IPedidoDAO remotePedido;
+	private static IUsuarioDAO remoteUsuario;
 	private Pedido pedido;
 
     @BeforeClass
@@ -37,26 +39,19 @@ public class PedidoIT {
     	 "C:/glassfish4/glassfish");
         ec = EJBContainer.createEJBContainer(properties);
         
-        remote = (IPedidoDAO) ec.getContext().lookup("java:global/supermercadoOnline-dao-0.0.1-SNAPSHOT/PedidoDAO");
+        remotePedido = (IPedidoDAO) ec.getContext().lookup("java:global/supermercadoOnline-dao-0.0.1-SNAPSHOT/PedidoDAO");
+        remoteUsuario = (IUsuarioDAO) ec.getContext().lookup("java:global/supermercadoOnline-dao-0.0.1-SNAPSHOT/UsuarioDAO");
     
    
     }
     
-    @Before
-	public void setUp() throws Exception {
-    	//Usuario usr = new Usuario();
-		//remote.init(usr);
-	}
-    
     @Test
 	public void testAddPedido() {
 		Pedido pedido = new Pedido();
-		Usuario usr = new Usuario();
-		usr.setNombre("dbr");
+		Usuario usr = remoteUsuario.getUsuario(1);
 		pedido.setUsuario(usr);
-		Pedido res = remote.addPedido(pedido);
-//		assertTrue(res.getUsuario().getNombre().equals(usr.getNombre()));
-    	assertTrue(true);
+		Pedido res = remotePedido.addPedido(pedido);
+		assertTrue(res.getUsuario().getNombre().equals(usr.getNombre()));
 
 	
 	}

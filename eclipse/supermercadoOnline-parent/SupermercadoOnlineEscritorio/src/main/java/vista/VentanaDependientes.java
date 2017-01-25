@@ -7,6 +7,8 @@ import java.awt.event.*;
 import javax.swing.*;
 
 import controlador.ControladorDependientes;
+import es.unican.ps.supermercadoOnline.utils.IPreparacionPedidoRemote;
+import es.unican.ps.supermercadoOnline.utils.IRealizaPedidoRemote;
 
 
 
@@ -53,13 +55,13 @@ public class VentanaDependientes extends JFrame {
 	/**
 	 * Construye la ventana principal
 	 */
-	public VentanaDependientes() {
+	public VentanaDependientes(IPreparacionPedidoRemote preparacion,IRealizaPedidoRemote realiza) {
 		
 		
 		super("Gesti\u00f3n de pedidos");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		controlador = new ControladorDependientes(this);
+		controlador = new ControladorDependientes(this,preparacion,realiza);
 		lstPedido.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 
 		// paneles laterales

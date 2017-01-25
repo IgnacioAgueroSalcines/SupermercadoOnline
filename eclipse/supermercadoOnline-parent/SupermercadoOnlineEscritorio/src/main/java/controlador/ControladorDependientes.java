@@ -31,8 +31,10 @@ public class ControladorDependientes {
 	 * Construye el controlador y asocia la vista
 	 * @param vista vista con la que se asocia el controlador
 	 */
-	public ControladorDependientes(VentanaDependientes vista) {
+	public ControladorDependientes(VentanaDependientes vista,IPreparacionPedidoRemote preparacion,IRealizaPedidoRemote realiza) {
 		this.vista = vista;
+		this.preparacion=preparacion;
+		this.realiza = realiza;
 		
 	}
 	

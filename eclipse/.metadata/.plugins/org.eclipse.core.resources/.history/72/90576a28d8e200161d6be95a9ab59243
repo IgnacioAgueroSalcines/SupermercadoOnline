@@ -1,0 +1,84 @@
+package selenium;
+
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.*;
+
+import static org.junit.Assert.*;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class pruebasVista {
+  private WebDriver driver;
+  private String baseUrl;
+  private boolean acceptNextAlert = true;
+  private StringBuffer verificationErrors = new StringBuffer();
+
+  @Before
+  public void setUp() throws Exception {
+	  System.setProperty("webdriver.gecko.driver", "C:\\geckodriver-v0.11.1-win64\\geckodriver.exe");
+    driver = new ChromeDriver();
+    baseUrl = "http://web.unican.es/";
+    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+  }
+
+  @Test
+  public void testCase1() throws Exception {
+    driver.get(baseUrl + "/");
+    driver.findElement(By.linkText("Directorio")).click();
+    driver.findElement(By.id("ctl00_ctl48_g_c62747f7_da11_4e23_b219_4c432dfb23c2_txtBuscar")).clear();
+    driver.findElement(By.id("ctl00_ctl48_g_c62747f7_da11_4e23_b219_4c432dfb23c2_txtBuscar")).sendKeys("Patricia López");
+    driver.findElement(By.id("ctl00_ctl48_g_c62747f7_da11_4e23_b219_4c432dfb23c2_btnBuscar")).click();
+    for (int second = 0;; second++) {
+    	if (second >= 60) fail("timeout");
+    	try { if ("Lopez Martinez, Patricia".equals(driver.findElement(By.id("ctl00_ctl48_g_c62747f7_da11_4e23_b219_4c432dfb23c2_rptpersonas_ctl01_lblNombre")).getText())) break; } catch (Exception e) {}
+    	Thread.sleep(1000);
+    }
+
+    assertEquals("patricia.lopez@unican.es", driver.findElement(By.id("ctl00_ctl48_g_c62747f7_da11_4e23_b219_4c432dfb23c2_rptpersonas_ctl01_lblMail")).getText());
+  }
+
+  @After
+  public void tearDown() throws Exception {
+    driver.quit();
+    String verificationErrorString = verificationErrors.toString();
+    if (!"".equals(verificationErrorString)) {
+      fail(verificationErrorString);
+    }
+  }
+
+  private boolean isElementPresent(By by) {
+    try {
+      driver.findElement(by);
+      return true;
+    } catch (NoSuchElementException e) {
+      return false;
+    }
+  }
+
+  private boolean isAlertPresent() {
+    try {
+      driver.switchTo().alert();
+      return true;
+    } catch (NoAlertPresentException e) {
+      return false;
+    }
+  }
+
+  private String closeAlertAndGetItsText() {
+    try {
+      Alert alert = driver.switchTo().alert();
+      String alertText = alert.getText();
+      if (acceptNextAlert) {
+        alert.accept();
+      } else {
+        alert.dismiss();
+      }
+      return alertText;
+    } finally {
+      acceptNextAlert = true;
+    }
+  }
+}
